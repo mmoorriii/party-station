@@ -1,64 +1,66 @@
 //?----IMPORT FONTS-------------------------------------------------------------------------------------
-
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200,300,400,500,700&family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400,700&display=swap');
 @import 'vars';
 @import 'null';
+@import 'extends';
 
 //?-----ОБЩИЕ СТИЛИ--------------------------------------------------------------------------------
+body {
+	background-color: $bgColor;
+	margin: 0;
+}
+
 .wrapper {
-   min-height: 100%;
-   display: flex;
-   flex-direction: column;
-   overflow: hidden;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
 
-   // Прижимаем footer книзу
-   >main {
-      flex: 1 1 auto;
-   }
+	// Прижимаем footer книзу
+	>main {
+		flex: 1 1 auto;
+	}
 
-   // Фикс для слайдеров
-   //>* {
-   //   min-width: 0;
-   //}
+	// Фикс для слайдеров
+	//>* {
+	//   min-width: 0;
+	//}
 }
 
 .container {
-   max-width: 90%;
-   //margin: 0 auto;
-   padding: 0 5%;
-}
-
-body {
-   background-color: $bgColor;
+	max-width: 100%;
+	//margin: 0 auto;
+	padding: 0 5%;
 }
 
 //?----HEADER-------------------------------------------------------------------------------------
 @import 'header';
 
 //?----MAIN / PAGE-------------------------------------------------------------------------------------
-@import 'block1';
+@import './assets/block1.scss';
 
-@import 'block2';
+@import './assets/block2.scss';
 
-@import 'block3';
+@import './assets/block3.scss';
 
-@import 'block4';
+@import './assets/block4.scss';
 
-@import 'block5';
+@import './assets/block5.scss';
 
-@import 'block6';
+@import './assets/block6.scss';
 
-@import 'block7';
+@import './assets/block7.scss';
 
-@import 'block8';
+@import './assets/block8.scss';
 
-@import 'block9';
+@import './assets/block9.scss';
 
-@import 'block10';
+@import './assets/block10.scss';
 
-@import 'block11';
+@import './assets/block11.scss';
 
-@import 'block12';
+@import './assets/block12.scss';
 
 //?----FOOTER-------------------------------------------------------------------------------------
 @import 'footer';
