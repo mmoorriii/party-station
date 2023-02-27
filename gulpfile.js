@@ -149,6 +149,7 @@ function js() {
             message: "Error: <%= error.message %>"
          })
       ))
+      .pipe(replace(/@img\//g, '../img/'))
       .pipe(rigger())
       .pipe(dest(path.build.js))
       .pipe(uglify())                      //СЖИМАЕМ JS

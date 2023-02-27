@@ -1,4 +1,6 @@
 //?----IMPORT FONTS-------------------------------------------------------------------------------------
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 
 
 @import 'vars';
@@ -23,7 +25,7 @@
 }
 
 .container {
-   max-width: 90%;
+   max-width: 100%;
    //margin: 0 auto;
    padding: 0 5%;
 }
@@ -36,29 +38,29 @@ body {
 @import 'header';
 
 //?----MAIN / PAGE-------------------------------------------------------------------------------------
-@import 'block1';
+@import 'assets/block1';
 
-@import 'block2';
+@import 'assets/block2';
 
-@import 'block3';
+@import 'assets/block3';
 
-@import 'block4';
+@import 'assets/block4';
 
-@import 'block5';
+@import 'assets/block5';
 
-@import 'block6';
+@import 'assets/block6';
 
-@import 'block7';
+@import 'assets/block7';
 
-@import 'block8';
+@import 'assets/block8';
 
-@import 'block9';
+@import 'assets/block9';
 
-@import 'block10';
+@import 'assets/block10';
 
-@import 'block11';
+@import 'assets/block11';
 
-@import 'block12';
+@import 'assets/block12';
 
 //?----FOOTER-------------------------------------------------------------------------------------
 @import 'footer';
