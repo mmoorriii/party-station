@@ -1,31 +1,38 @@
 * {
+<<<<<<< HEAD
    padding: 0;
    margin: 0;
    border: 0;
+=======
+	padding: 0;
+	margin: 0;
+	border: 0;
+>>>>>>> f88c9849c6a7e247b81eb402a8961fb989fb7cc0
 }
 
 *,
 *:before,
 *:after {
-   box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 :focus,
 :active {
-   outline: none;
+	outline: none;
 }
 
 a:focus,
 a:active {
-   outline: none;
+	outline: none;
 }
 
 html,
 body {
-   height: 100%;
+	height: 100%;
 }
 
 body {
+<<<<<<< HEAD
    color: $mainColor;
    font-size: $fontSize;
    //text-rendering: optimizeLegibility;
@@ -34,30 +41,44 @@ body {
    -webkit-text-size-adjust: 100%;
    -webkit-font-smoothing: antialiased;
    -moz-osx-font-smoothing: grayscale;
+=======
+	color: $mainColor;
+	font-size: $fontSize;
+	//text-rendering: optimizeLegibility;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+>>>>>>> f88c9849c6a7e247b81eb402a8961fb989fb7cc0
 }
 
 input,
 button,
 textarea {
+<<<<<<< HEAD
    font-size: inherit;
+=======
+	font-size: inherit;
+>>>>>>> f88c9849c6a7e247b81eb402a8961fb989fb7cc0
 }
 
 textarea {
-   resize: none;
+	resize: none;
 }
 
 button {
-   cursor: pointer;
-   color: inherit;
+	cursor: pointer;
+	color: inherit;
 }
 
 a {
-   color: inherit;
-   text-decoration: none;
+	color: inherit;
+	text-decoration: none;
 }
 
 ul li {
-   list-style: none;
+	list-style: none;
 }
 
 h1,
@@ -66,6 +87,6 @@ h3,
 h4,
 h5,
 h6 {
-   font-weight: inherit;
-   font-size: inherit;
+	font-weight: inherit;
+	font-size: inherit;
 }

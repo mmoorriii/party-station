@@ -1,3 +1,56 @@
+<<<<<<< HEAD
 %mainTitle {
    
+=======
+%buttonMainStyle {
+	position: relative;
+	border-radius: 56px;
+	width: 200px;
+	height: 50px;
+	background: linear-gradient(90deg, #800BF5 26.67%, #25C6F9 97.33%);
+	transition: all 200ms ease-out;
+
+	&::before {
+		content: "";
+		position: absolute;
+		top: -1px;
+		width: 100.7%;
+		height: 52px;
+		left: -1px;
+		background: linear-gradient(90deg, #800bf5 26.67%, #25c6f9 97.33%);
+		border-radius: 56px;
+		z-index: -1;
+		opacity: 1;
+	}
+
+	&:hover {
+		background: rgba(20, 6, 61, 1);
+	}
+
+	@media screen and (min-width: 630px){
+		position: relative;
+		border-radius: 56px;
+		width: 200px;
+		height: 50px;
+		background: linear-gradient(90deg, #800BF5 26.67%, #25C6F9 97.33%);
+		transition: all 200ms ease-out;
+
+		&::before {
+			content: "";
+			position: absolute;
+			top: -1px;
+			width: 202px;
+			height: 52px;
+			left: -1px;
+			background: linear-gradient(90deg, #800bf5 26.67%, #25c6f9 97.33%);
+			border-radius: 56px;
+			z-index: -1;
+			opacity: 1;
+		}
+
+		&:hover {
+			background: rgba(20, 6, 61, 1);
+		}
+	}
+>>>>>>> f88c9849c6a7e247b81eb402a8961fb989fb7cc0
 }
