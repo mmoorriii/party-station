@@ -1,0 +1,64 @@
+//?----IMPORT FONTS-------------------------------------------------------------------------------------
+
+
+@import 'vars';
+@import 'null';
+
+//?-----ОБЩИЕ СТИЛИ--------------------------------------------------------------------------------
+.wrapper {
+   min-height: 100%;
+   display: flex;
+   flex-direction: column;
+   overflow: hidden;
+
+   // Прижимаем footer книзу
+   >main {
+      flex: 1 1 auto;
+   }
+
+   // Фикс для слайдеров
+   //>* {
+   //   min-width: 0;
+   //}
+}
+
+.container {
+   max-width: 90%;
+   //margin: 0 auto;
+   padding: 0 5%;
+}
+
+body {
+   background-color: $bgColor;
+}
+
+//?----HEADER-------------------------------------------------------------------------------------
+@import 'header';
+
+//?----MAIN / PAGE-------------------------------------------------------------------------------------
+@import 'block1';
+
+@import 'block2';
+
+@import 'block3';
+
+@import 'block4';
+
+@import 'block5';
+
+@import 'block6';
+
+@import 'block7';
+
+@import 'block8';
+
+@import 'block9';
+
+@import 'block10';
+
+@import 'block11';
+
+@import 'block12';
+
+//?----FOOTER-------------------------------------------------------------------------------------
+@import 'footer';
