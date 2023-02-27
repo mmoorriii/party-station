@@ -1,13 +1,7 @@
 * {
-<<<<<<< HEAD
-   padding: 0;
-   margin: 0;
-   border: 0;
-=======
 	padding: 0;
 	margin: 0;
 	border: 0;
->>>>>>> f88c9849c6a7e247b81eb402a8961fb989fb7cc0
 }
 
 *,
@@ -32,7 +26,6 @@ body {
 }
 
 body {
-<<<<<<< HEAD
    color: $mainColor;
    font-size: $fontSize;
    //text-rendering: optimizeLegibility;
@@ -41,26 +34,12 @@ body {
    -webkit-text-size-adjust: 100%;
    -webkit-font-smoothing: antialiased;
    -moz-osx-font-smoothing: grayscale;
-=======
-	color: $mainColor;
-	font-size: $fontSize;
-	//text-rendering: optimizeLegibility;
-	-ms-text-size-adjust: 100%;
-	-moz-text-size-adjust: 100%;
-	-webkit-text-size-adjust: 100%;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
->>>>>>> f88c9849c6a7e247b81eb402a8961fb989fb7cc0
 }
 
 input,
 button,
 textarea {
-<<<<<<< HEAD
    font-size: inherit;
-=======
-	font-size: inherit;
->>>>>>> f88c9849c6a7e247b81eb402a8961fb989fb7cc0
 }
 
 textarea {

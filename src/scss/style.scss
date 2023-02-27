@@ -1,13 +1,8 @@
 //?----IMPORT FONTS-------------------------------------------------------------------------------------
-<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 
 
-=======
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200,300,400,500,700&family=Russo+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400,700&display=swap');
->>>>>>> f88c9849c6a7e247b81eb402a8961fb989fb7cc0
 @import 'vars';
 @import 'null';
 @import 'extends';
@@ -36,7 +31,6 @@ body {
 }
 
 .container {
-<<<<<<< HEAD
    max-width: 100%;
    //margin: 0 auto;
    padding: 0 5%;
@@ -44,18 +38,12 @@ body {
 
 body {
    background-color: $bgColor;
-=======
-	max-width: 100%;
-	//margin: 0 auto;
-	padding: 0 5%;
->>>>>>> f88c9849c6a7e247b81eb402a8961fb989fb7cc0
 }
 
 //?----HEADER-------------------------------------------------------------------------------------
 @import 'header';
 
 //?----MAIN / PAGE-------------------------------------------------------------------------------------
-<<<<<<< HEAD
 @import 'assets/block1';
 
 @import 'assets/block2';
@@ -79,31 +67,6 @@ body {
 @import 'assets/block11';
 
 @import 'assets/block12';
-=======
-@import './assets/block1.scss';
-
-@import './assets/block2.scss';
-
-@import './assets/block3.scss';
-
-@import './assets/block4.scss';
-
-@import './assets/block5.scss';
-
-@import './assets/block6.scss';
-
-@import './assets/block7.scss';
-
-@import './assets/block8.scss';
-
-@import './assets/block9.scss';
-
-@import './assets/block10.scss';
-
-@import './assets/block11.scss';
-
-@import './assets/block12.scss';
->>>>>>> f88c9849c6a7e247b81eb402a8961fb989fb7cc0
 
 //?----FOOTER-------------------------------------------------------------------------------------
 @import 'footer';
