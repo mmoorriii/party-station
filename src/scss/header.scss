@@ -4,6 +4,8 @@
 	margin-bottom: 25px;
 
 	.header-container-hidden{
+		border-bottom-left-radius: 5px;
+		border-bottom-right-radius: 5px;
 		background: rgba(255, 255, 255, 0.2);
 		backdrop-filter: blur(28px);
 		width: 100%;
@@ -22,7 +24,7 @@
 
 		>div:first-of-type{
 			display: flex;
-			
+
 			>.header-about,
 			>.header-work {
 				text-transform: lowercase;
@@ -32,7 +34,7 @@
 				line-height: 120%;
 				font-feature-settings: 'ss05';
 				margin-bottom: 40px;
-				margin-right: 10px;
+				margin-right: 20px;
 				
 				>a{
 					opacity: 1;

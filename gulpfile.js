@@ -142,25 +142,6 @@ function css() {
 }
 
 function js() {
-<<<<<<< HEAD
-   return src(path.src.js, { base: srcPath + "js/" })
-      .pipe(plumber(
-         notify.onError({
-            title: "JS Error",
-            message: "Error: <%= error.message %>"
-         })
-      ))
-      .pipe(replace(/@img\//g, '../img/'))
-      .pipe(rigger())
-      .pipe(dest(path.build.js))
-      .pipe(uglify())                      //СЖИМАЕМ JS
-      .pipe(rename({
-         suffix: ".min",
-         extname: ".js"
-      }))
-      .pipe(dest(path.build.js))
-      .pipe(browserSync.reload({ stream: true }));
-=======
 	return src(path.src.js, { base: srcPath + "js/" })
 		.pipe(plumber(
 			notify.onError({
@@ -177,7 +158,6 @@ function js() {
 		}))
 		.pipe(dest(path.build.js))
 		.pipe(browserSync.reload({ stream: true }));
->>>>>>> f88c9849c6a7e247b81eb402a8961fb989fb7cc0
 }
 
 function images() {

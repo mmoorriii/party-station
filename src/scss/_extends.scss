@@ -17,6 +17,7 @@
 		border-radius: 56px;
 		z-index: -1;
 		opacity: 1;
+		transition: all 200ms ease-out;
 	}
 
 	&:hover {
@@ -30,7 +31,7 @@
 		height: 50px;
 		background: linear-gradient(90deg, #800BF5 26.67%, #25C6F9 97.33%);
 		transition: all 200ms ease-out;
-
+	
 		&::before {
 			content: "";
 			position: absolute;
@@ -43,9 +44,13 @@
 			z-index: -1;
 			opacity: 1;
 		}
-
+	
 		&:hover {
-			background: rgba(20, 6, 61, 1);
+			background: linear-gradient(0.75turn,#800bf5 26.67%,#25c6f9 97.33%);
+		}
+	
+		&:hover::before{
+			background: linear-gradient(0.75turn,#800bf5 26.67%,#25c6f9 97.33%);
 		}
 	}
 }
