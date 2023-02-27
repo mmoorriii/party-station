@@ -1,6 +1,7 @@
 //?----IMPORT FONTS-------------------------------------------------------------------------------------
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200,300,400,500,700&family=Russo+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
 
 @import 'vars';
 @import 'null';
@@ -35,33 +36,37 @@ body {
    padding: 0 5%;
 }
 
+body {
+   background-color: $bgColor;
+}
+
 //?----HEADER-------------------------------------------------------------------------------------
 @import 'header';
 
 //?----MAIN / PAGE-------------------------------------------------------------------------------------
-@import './assets/block1.scss';
+@import 'assets/block1';
 
-@import './assets/block2.scss';
+@import 'assets/block2';
 
-@import './assets/block3.scss';
+@import 'assets/block3';
 
-@import './assets/block4.scss';
+@import 'assets/block4';
 
-@import './assets/block5.scss';
+@import 'assets/block5';
 
-@import './assets/block6.scss';
+@import 'assets/block6';
 
-@import './assets/block7.scss';
+@import 'assets/block7';
 
-@import './assets/block8.scss';
+@import 'assets/block8';
 
-@import './assets/block9.scss';
+@import 'assets/block9';
 
-@import './assets/block10.scss';
+@import 'assets/block10';
 
-@import './assets/block11.scss';
+@import 'assets/block11';
 
-@import './assets/block12.scss';
+@import 'assets/block12';
 
 //?----FOOTER-------------------------------------------------------------------------------------
 @import 'footer';
