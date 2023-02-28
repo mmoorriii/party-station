@@ -60,6 +60,10 @@
 		>.header-play{
 			width: 100%;
 			>button {
+				>span{
+					position: relative;
+					z-index: 2;
+				}
 				@extend %buttonMainStyle;
 				width: inherit;
 			}
@@ -81,6 +85,10 @@
 		>.header-play-main{
 			display: none;
 			>button{
+				>span{
+					position: relative;
+					z-index: 2;
+				}
 				@extend %buttonMainStyle;
 			}
 		}
