@@ -95,6 +95,7 @@ h6 {
    border-radius: 56px;
    z-index: -1;
    opacity: 1;
+   transition: all 200ms ease-out;
 }
 
 .header > .header-container-main > .header-play-main > button:hover,
@@ -149,6 +150,7 @@ body {
    border-radius: 56px;
    z-index: -1;
    opacity: 1;
+   transition: all 200ms ease-out;
 }
 
 .header > .header-container-main > .header-play-main > button:hover,
@@ -161,6 +163,8 @@ body {
 }
 
 .header .header-container-hidden {
+   border-bottom-left-radius: 5px;
+   border-bottom-right-radius: 5px;
    background: rgba(255, 255, 255, 0.2);
    -webkit-backdrop-filter: blur(28px);
    backdrop-filter: blur(28px);
@@ -192,7 +196,7 @@ body {
    line-height: 120%;
    font-feature-settings: "ss05";
    margin-bottom: 40px;
-   margin-right: 10px;
+   margin-right: 20px;
 }
 
 .header .header-container-hidden > div:first-of-type > .header-about > a,
@@ -433,7 +437,12 @@ body {
 
    .header > .header-container-main > .header-play-main > button:hover,
   .header .header-container-hidden > .header-play > button:hover {
-      background: rgb(20, 6, 61);
+      background: linear-gradient(0.75turn, #800bf5 26.67%, #25c6f9 97.33%);
+   }
+
+   .header > .header-container-main > .header-play-main > button:hover::before,
+  .header .header-container-hidden > .header-play > button:hover::before {
+      background: linear-gradient(0.75turn, #800bf5 26.67%, #25c6f9 97.33%);
    }
 
    .header > .header-container-main > .header-play-main > button,
@@ -462,7 +471,12 @@ body {
 
    .header > .header-container-main > .header-play-main > button:hover,
   .header .header-container-hidden > .header-play > button:hover {
-      background: rgb(20, 6, 61);
+      background: linear-gradient(0.75turn, #800bf5 26.67%, #25c6f9 97.33%);
+   }
+
+   .header > .header-container-main > .header-play-main > button:hover::before,
+  .header .header-container-hidden > .header-play > button:hover::before {
+      background: linear-gradient(0.75turn, #800bf5 26.67%, #25c6f9 97.33%);
    }
 
    .header {
