@@ -1,0 +1,128 @@
+@import 'vars';
+@import 'extends';
+
+.page__block4 {
+   margin-bottom: 25px;
+}
+
+.block4__billet {
+   @extend %billet;
+   margin-bottom: 30px;
+}
+
+.block4__title {
+   @extend %title;
+   margin-bottom: 10px;
+}
+
+.block4__slider {
+
+   .slick-list {
+      overflow: hidden;
+
+      .draggable {
+         display: none;
+      }
+   }
+
+   .slick-track {
+      display: flex;
+      //justify-content: space-around;
+      //width: 1200px !important;
+   }
+
+   .slick-slide {
+      flex: 0 0 288px;
+      //width: 100% !important;
+      //width: 288px;
+
+      &:not(:last-child) {
+         margin-right: 16px;
+      }
+   }
+
+   //.arrow-up {
+   //   width: 60px;
+   //}
+}
+
+.block4__slider-body {
+   margin: 0 16px;
+}
+
+.block4__slider-round {
+   padding-top: 80px;
+   height: 288px;
+   border-radius: 50%;
+   background: linear-gradient(147deg, #14063d 50%, #320770 90%, rgba(128, 11, 245, .4));
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.block4__slider-round_gradient-bg {
+   padding: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background: linear-gradient(90deg, #800BF5 26.67%, #25C6F9 97.33%);
+}
+
+.block4__slider-text {
+   font-family: $fontText;
+   font-size: 18px;
+   line-height: 120%;
+   color: $mainColor;
+   max-width: 80%;
+}
+
+.block4__slider-number {
+   font-size: 80px;
+   line-height: 100%;
+   font-family: $fontTitles;
+   color: #14063D;
+   align-self: center;
+   position: relative;
+   bottom: -12px;
+}
+
+.block4__slider-dots {
+   margin-top: 40px;
+
+   .slick-dots {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      li {
+         font-size: 0;
+         width: 8px;
+         height: 8px;
+         background-color: rgba(255, 255, 255, 0.2);
+         border-radius: 50%;
+         transition: all 0.5s ease;
+
+         &:not(:last-child) {
+            margin-right: 8px;
+         }
+
+         &.slick-active {
+            background-color: rgb(255, 255, 255);
+            width: 24px;
+            border-radius: 8px;
+         }
+      }
+
+      button {
+         font-size: 0;
+      }
+   }
+}
+
+@media (min-width: 430px) {
+   .block4__slider-dots {
+      display: none;
+   }
+}
+
+@media (min-width: 540px) {}
