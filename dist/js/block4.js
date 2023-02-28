@@ -7,6 +7,7 @@ $(document).ready(function () {
    //   swipeToSlide: true,
    //   mobileFirst: true,
    //   variableWidth: true,
+   //   centerMode: true,
    //   //responsive: [
    //   //   {
    //   //      breakpoint: 321,
@@ -17,12 +18,14 @@ $(document).ready(function () {
    //   //]
    //});
 
-   if ($(window).width() <= 430) {
+   if ($(window).width() <= 630) {
       $('.block4__slider').slick({
          infinite: false,
          arrows: false,
          dots: true,
          appendDots: '.block4__slider-dots',
+         variableWidth: true,
+         centerMode: true,
       });
    } else {
       $('.block4__slider').slick('unslick');
@@ -31,8 +34,8 @@ $(document).ready(function () {
 
    //---ADD IMAGE IF WINDOW WIDTH MORE THEN 540PX----------------------------------------------------------------------------------
    //window.addEventListener('resize', function () {
-   //   if (window.innerWidth >= 540) {
-   //      $('#block1').append('<img class="arrow-up" src="../img/arrow-up.svg" alt="">');
+   //   if (window.innerWidth >= 630) {
+   //      $('#block1').after('<img class="arrow-up" src="../img/arrow-up.svg" alt="">');
    //   } else {
    //   }
    //});

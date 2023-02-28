@@ -1,69 +1,74 @@
-.container{
-	&.block2-slider{
-		margin-bottom: 25px;
-		overflow-x: scroll;
-		display: flex;
-		justify-content: space-between;
-		position: relative;
-		z-index: 2;
-		
-		&::-webkit-scrollbar{display: none;}
+.container {
+   &.block2-slider {
+      margin-bottom: 25px;
+      overflow-x: scroll;
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      z-index: 2;
 
-		>.slider{	
-			flex: 0 0 auto;			
-			width: 328px;
-			
-			&:not(:last-child){margin-right: 20px;}
+      &::-webkit-scrollbar {
+         display: none;
+      }
 
-			>.main-img{
-				margin-bottom: 10px;
+      >.slider {
+         flex: 0 0 auto;
+         width: 328px;
 
-				>img{width: 100%;}
-			}
+         &:not(:last-child) {
+            margin-right: 20px;
+         }
 
-			>.title{
-				margin-bottom: 8px;
+         >.main-img {
+            margin-bottom: 10px;
 
-				>p{
-					font-family: $fontText;
-					font-style: normal;
-					font-weight: 700;
-					font-size: 18px;
-					line-height: 120%;
-					font-feature-settings: 'ss05' on;
-					color: $mainColor;
-				}
-			}
+            >img {
+               width: 100%;
+            }
+         }
 
-			>.some-txt{
-				>p{
-					font-family: $fontText;
-					font-style: normal;
-					font-weight: 400;
-					font-size: 16px;
-					line-height: 120%;
-					font-feature-settings: 'ss05' on;
-					color: $mainColor;
-					opacity: 0.4;
-				}
-			}
-		}
-	}
+         >.title {
+            margin-bottom: 8px;
+
+            >p {
+               font-family: $fontText;
+               font-style: normal;
+               font-weight: 700;
+               font-size: 18px;
+               line-height: 120%;
+               font-feature-settings: 'ss05' on;
+               color: $mainColor;
+            }
+         }
+
+         >.some-txt {
+            >p {
+               font-family: $fontText;
+               font-style: normal;
+               font-weight: 400;
+               font-size: 16px;
+               line-height: 120%;
+               font-feature-settings: 'ss05' on;
+               color: $mainColor;
+               opacity: 0.4;
+            }
+         }
+      }
+   }
 }
-@media screen and (min-width: 630px){
-	.container{
-		&.block2-slider{
-			margin-bottom: 50px;
-		}
-	}
+
+@media screen and (min-width: 630px) {
+   .block2-slider {
+      margin-bottom: 50px;
+   }
 }
 
-@media screen and (min-width: 1200px){
-	.container{
-		&.block2-slider{
-			>.slider{
-				width: 23%;
-			}
-		}
-	}
+@media screen and (min-width: 1200px) {
+   .container {
+      &.block2-slider {
+         >.slider {
+            width: 23%;
+         }
+      }
+   }
 }
