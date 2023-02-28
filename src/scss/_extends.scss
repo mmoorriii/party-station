@@ -1,49 +1,77 @@
+@import 'vars';
+
 %buttonMainStyle {
-	position: relative;
-	border-radius: 56px;
-	width: 200px;
-	height: 50px;
-	background: linear-gradient(90deg, #800BF5 26.67%, #25C6F9 97.33%);
-  	transition: all .6s ease;
+   position: relative;
+   border-radius: 56px;
+   width: 200px;
+   height: 50px;
+   background: linear-gradient(90deg, #800BF5 26.67%, #25C6F9 97.33%);
+   transition: all .6s ease;
 
-	&::before {
-		content: "";
-		display: block;
-		position: absolute;
-		top: -1px;
-		width: 100%;
-		height: 52px;
-		left: 0px;
-		background: linear-gradient(270deg, #800bf5 26.67%, #25c6f9 97.33%);
-		border-radius: 56px;
-		opacity: 0;
-		transition: inherit;
-	}
+   &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: -1px;
+      width: 100%;
+      height: 52px;
+      left: 0px;
+      background: linear-gradient(270deg, #800bf5 26.67%, #25c6f9 97.33%);
+      border-radius: 56px;
+      opacity: 0;
+      transition: inherit;
+   }
 
-	&:hover::before{opacity: 1;}
+   &:hover::before {
+      opacity: 1;
+   }
 
-	@media screen and (min-width: 630px){
-		position: relative;
-		border-radius: 56px;
-		width: 200px;
-		height: 50px;
-		background: linear-gradient(90deg, #800BF5 26.67%, #25C6F9 97.33%);
-  		transition: all .6s ease;
-		
-		&::before {
-			content: "";
-			display: block;
-			position: absolute;
-			top: -1px;
-			width: 202px;
-			height: 52px;
-			left: 0px;
-			background: linear-gradient(270deg, #800bf5 26.67%, #25c6f9 97.33%);
-			border-radius: 56px;
-			opacity: 0;
-			transition: inherit;
-		}
-	
-		&:hover::before{opacity: 1;}
-	}
+   @media screen and (min-width: 630px) {
+      position: relative;
+      border-radius: 56px;
+      width: 200px;
+      height: 50px;
+      background: linear-gradient(90deg, #800BF5 26.67%, #25C6F9 97.33%);
+      transition: all .6s ease;
+
+      &::before {
+         content: "";
+         display: block;
+         position: absolute;
+         top: -1px;
+         width: 202px;
+         height: 52px;
+         left: 0px;
+         background: linear-gradient(270deg, #800bf5 26.67%, #25c6f9 97.33%);
+         border-radius: 56px;
+         opacity: 0;
+         transition: inherit;
+      }
+
+      &:hover::before {
+         opacity: 1;
+      }
+   }
+}
+
+//-----ПЛАШКА-----------------------------------------------------------------------------------------
+%billet {
+   font-family: $fontText;
+   font-weight: 700;
+   font-size: 12px;
+   line-height: 120%;
+   letter-spacing: 0.1em;
+   text-transform: uppercase;
+   opacity: 0.6;
+   border: 1px solid rgba(255, 255, 255, 0.6);
+   padding: 7px 17px;
+   border-radius: 56px;
+   display: inline-block;
+}
+
+//----------------------------------------------------------------------------------------------
+%title {
+   font-family: $fontTitles;
+   font-size: 24px;
+   line-height: 120%;
 }
