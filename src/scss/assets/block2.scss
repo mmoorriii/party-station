@@ -6,7 +6,8 @@
 		justify-content: space-between;
 		position: relative;
 		z-index: 2;
-		
+		-ms-overflow-style: none;
+
 		&::-webkit-scrollbar{display: none;}
 
 		>.slider{	
@@ -51,11 +52,10 @@
 	}
 }
 @media screen and (min-width: 630px){
-	.container{
-		&.block2-slider{
-			margin-bottom: 50px;
-		}
+	.block2-slider{
+		margin-bottom: 50px;
 	}
+
 }
 
 @media screen and (min-width: 1200px){

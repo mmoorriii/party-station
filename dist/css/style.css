@@ -449,6 +449,7 @@ body {
    justify-content: space-between;
    position: relative;
    z-index: 2;
+   -ms-overflow-style: none;
 }
 
 .container.block2-slider::-webkit-scrollbar {
@@ -503,6 +504,157 @@ body {
 
 .container > img {
    width: 100%;
+}
+
+.header .header-container-hidden > .header-play > button,
+.header > .header-container-main > .header-play-main > button {
+   position: relative;
+   border-radius: 56px;
+   width: 200px;
+   height: 50px;
+   background: linear-gradient(90deg, #800BF5 26.67%, #25C6F9 97.33%);
+   transition: all 0.6s ease;
+}
+
+.header .header-container-hidden > .header-play > button::before,
+.header > .header-container-main > .header-play-main > button::before {
+   content: "";
+   display: block;
+   position: absolute;
+   top: -1px;
+   width: 100%;
+   height: 52px;
+   left: 0px;
+   background: linear-gradient(270deg, #800bf5 26.67%, #25c6f9 97.33%);
+   border-radius: 56px;
+   opacity: 0;
+   transition: inherit;
+}
+
+.header .header-container-hidden > .header-play > button:hover::before,
+.header > .header-container-main > .header-play-main > button:hover::before {
+   opacity: 1;
+}
+
+.block4__billet {
+   font-family: "PT Sans", sans-serif;
+   font-weight: 700;
+   font-size: 12px;
+   line-height: 120%;
+   letter-spacing: 0.1em;
+   text-transform: uppercase;
+   opacity: 0.6;
+   border: 1px solid rgba(255, 255, 255, 0.6);
+   padding: 7px 17px;
+   border-radius: 56px;
+   display: inline-block;
+}
+
+.block4__title {
+   font-family: "Russo One", sans-serif;
+   font-size: 24px;
+   line-height: 120%;
+}
+
+.page__block4 {
+   margin-bottom: 25px;
+}
+
+.block4__billet {
+   margin-bottom: 30px;
+}
+
+.block4__title {
+   margin-bottom: 10px;
+}
+
+.block4__slider .slick-list {
+   overflow: hidden;
+}
+
+.block4__slider .slick-track {
+   display: flex;
+}
+
+.block4__slider .slick-slide {
+   flex: 0 0 288px;
+}
+
+.block4__slider .slick-slide:not(:last-child) {
+   margin-right: 16px;
+}
+
+.block4__slider-body {
+   margin: 0 16px;
+}
+
+.block4__slider-round {
+   padding-top: 80px;
+   height: 288px;
+   border-radius: 50%;
+   background: linear-gradient(147deg, #14063d 50%, #320770 90%, rgba(128, 11, 245, 0.4));
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.block4__slider-round_gradient-bg {
+   padding: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background: linear-gradient(90deg, #800BF5 26.67%, #25C6F9 97.33%);
+}
+
+.block4__slider-text {
+   font-family: "PT Sans", sans-serif;
+   font-size: 18px;
+   line-height: 120%;
+   color: #fff;
+   max-width: 80%;
+}
+
+.block4__slider-number {
+   font-size: 80px;
+   line-height: 100%;
+   font-family: "Russo One", sans-serif;
+   color: #14063D;
+   align-self: center;
+   position: relative;
+   bottom: -12px;
+}
+
+.block4__slider-dots {
+   margin-top: 40px;
+}
+
+.block4__slider-dots .slick-dots {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.block4__slider-dots .slick-dots li {
+   font-size: 0;
+   width: 8px;
+   height: 8px;
+   background-color: rgba(255, 255, 255, 0.2);
+   border-radius: 50%;
+   transition: all 0.5s ease;
+}
+
+.block4__slider-dots .slick-dots li:not(:last-child) {
+   margin-right: 8px;
+}
+
+.block4__slider-dots .slick-dots li.slick-active {
+   background-color: rgb(255, 255, 255);
+   width: 24px;
+   border-radius: 8px;
+}
+
+.block4__slider-dots .slick-dots button {
+   font-size: 0;
 }
 
 @media (min-width: 425px) {
@@ -640,12 +792,42 @@ body {
       display: block;
    }
 
-   .container.block2-slider {
+   .block2-slider {
       margin-bottom: 50px;
    }
 
    .container {
       margin-bottom: 50px;
+   }
+
+   .header .header-container-hidden > .header-play > button,
+  .header > .header-container-main > .header-play-main > button {
+      position: relative;
+      border-radius: 56px;
+      width: 200px;
+      height: 50px;
+      background: linear-gradient(90deg, #800BF5 26.67%, #25C6F9 97.33%);
+      transition: all 0.6s ease;
+   }
+
+   .header .header-container-hidden > .header-play > button::before,
+  .header > .header-container-main > .header-play-main > button::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: -1px;
+      width: 202px;
+      height: 52px;
+      left: 0px;
+      background: linear-gradient(270deg, #800bf5 26.67%, #25c6f9 97.33%);
+      border-radius: 56px;
+      opacity: 0;
+      transition: inherit;
+   }
+
+   .header .header-container-hidden > .header-play > button:hover::before,
+  .header > .header-container-main > .header-play-main > button:hover::before {
+      opacity: 1;
    }
 }
 
