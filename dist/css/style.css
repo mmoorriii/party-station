@@ -471,6 +471,17 @@ body {
    width: 100%;
 }
 
+.container.block2-slider > .slider > .title > p {
+   font-family: "PT Sans", sans-serif;
+   font-style: normal;
+   font-weight: 700;
+   font-size: 18px;
+   line-height: 120%;
+   font-feature-settings: "ss05" on;
+   color: #fff;
+   margin-bottom: 8px;
+}
+
 .container.block2-slider > .slider > .some-txt > p {
    font-family: "PT Sans", sans-serif;
    font-style: normal;
@@ -925,8 +936,8 @@ body {
       margin-bottom: 50px;
    }
 
-   .block2-slider {
-      margin-bottom: 50px;
+   .block2-slider > .slider > .title > p {
+      font-size: 20px !important;
    }
 
    .container {

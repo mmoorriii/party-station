@@ -1,5 +1,5 @@
-.container{
-	&.block2-slider{
+.container {
+	&.block2-slider {
 		margin-bottom: 25px;
 		overflow-x: scroll;
 		display: flex;
@@ -8,30 +8,41 @@
 		z-index: 2;
 		-ms-overflow-style: none;
 
-		&::-webkit-scrollbar{display: none;}
+		&::-webkit-scrollbar {
+			display: none;
+		}
 
-      &::-webkit-scrollbar {
-         display: none;
-      }
+		>.slider {
+			flex: 0 0 auto;
+			width: 328px;
 
-      >.slider {
-         flex: 0 0 auto;
-         width: 328px;
+			&:not(:last-child) {
+				margin-right: 20px;
+			}
 
-         &:not(:last-child) {
-            margin-right: 20px;
-         }
+			>.main-img {
+				margin-bottom: 10px;
 
-         >.main-img {
-            margin-bottom: 10px;
+				>img {
+					width: 100%;
+				}
+			}
 
-            >img {
-               width: 100%;
-            }
-         }
+			>.title {
+				>p {
+					font-family: $fontText;
+					font-style: normal;
+					font-weight: 700;
+					font-size: 18px;
+					line-height: 120%;
+					font-feature-settings: 'ss05' on;
+					color: $mainColor;
+					margin-bottom: 8px;
+				}
+			}
 
 			>.some-txt{
-				>p{
+				>p {
 					font-family: $fontText;
 					font-style: normal;
 					font-weight: 400;
@@ -45,25 +56,24 @@
 		}
 	}
 }
-@media screen and (min-width: 630px){
-	.block2-slider{
-		margin-bottom: 50px;
-	}
-
-}
 
 @media screen and (min-width: 630px) {
-   .block2-slider {
-      margin-bottom: 50px;
-   }
+	.block2-slider {
+		margin-bottom: 50px;
+		>.slider {
+			>.title {
+				>p {font-size: 20px!important;}
+			}
+		}
+	}	
 }
 
 @media screen and (min-width: 1200px) {
-   .container {
-      &.block2-slider {
-         >.slider {
-            width: 23%;
-         }
-      }
-   }
+	.container {
+		&.block2-slider {
+			>.slider {
+				width: 23%;
+			}
+		}
+	}
 }
