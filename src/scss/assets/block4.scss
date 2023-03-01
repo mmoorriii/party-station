@@ -7,6 +7,18 @@
    .bubble {
       display: none;
    }
+
+   .arrow1-1440,
+   .arrow2-1440,
+   .arrow3-1440,
+   .arrow4-1440,
+   .cosmonaut-left,
+   .cosmonaut-right,
+   .block4__android,
+   .cosmonaut-left-light,
+   .cosmonaut-right-light {
+      display: none;
+   }
 }
 
 .block4__billet {
@@ -15,16 +27,13 @@
 }
 
 .block4__title {
-   @extend %title;
+   font-family: $fontTitles;
+   line-height: 120%;
    margin-bottom: 10px;
    font-size: 24px;
 }
 
 .block4__slider {
-   .block4__android {
-      display: none;
-   }
-
    .slick-list {
       overflow: hidden;
    }
@@ -36,27 +45,10 @@
    .slick-slide {
       flex: 0 0 288px;
    }
-
-   .arrow1-1440,
-   .arrow2-1440,
-   .arrow3-1440,
-   .arrow4-1440,
-   .cosmonaut-left,
-   .cosmonaut-right {
-      display: none;
-   }
 }
 
 .block4__slider-body {
    margin: 0 16px;
-
-   >.arrow-up {
-      display: none;
-   }
-
-   >.arrow-down {
-      display: none;
-   }
 }
 
 .block4__slider-round {
@@ -67,6 +59,11 @@
    display: flex;
    flex-direction: column;
    justify-content: space-between;
+
+   .arrow-down,
+   .arrow-up {
+      display: none;
+   }
 }
 
 .block4__slider-round_gradient-bg {
@@ -75,6 +72,28 @@
    justify-content: center;
    align-items: center;
    background: linear-gradient(90deg, #800BF5 26.67%, #25C6F9 97.33%);
+   animation: gradient 4s ease-in-out infinite;
+   background-size: 400% 400%;
+   transition: all 0.5s ease-in-out;
+
+   &:hover {
+      background-blend-mode: multiply;
+      background-color: rgba(0, 0, 0, 0.264);
+   }
+}
+
+@keyframes gradient {
+   0% {
+      background-position: 0% 50%;
+   }
+
+   50% {
+      background-position: 100% 50%;
+   }
+
+   100% {
+      background-position: 0% 50%;
+   }
 }
 
 .block4__slider-text {
@@ -116,6 +135,7 @@
          }
 
          &.slick-active {
+            height: 8px;
             background-color: rgb(255, 255, 255);
             width: 24px;
             border-radius: 8px;
@@ -131,6 +151,7 @@
 @media (min-width: 630px) {
    .page__block4 {
       margin-bottom: 50px;
+      position: relative;
    }
 
    .block4__slider-dots {
@@ -149,26 +170,26 @@
    }
 
    .block4__slider-body {
-      position: relative;
       flex: 0 0 336px;
-
-      >.arrow-up {
-         display: block;
-         position: absolute;
-         bottom: 0;
-         right: -51px;
-      }
-
-      >.arrow-down {
-         display: block;
-         position: absolute;
-         top: 0;
-         right: -51px;
-      }
    }
 
    .block4__slider-round {
       height: 336px;
+      position: relative;
+
+      .arrow-up {
+         display: block;
+         position: absolute;
+         bottom: 0;
+         left: 307px;
+      }
+
+      .arrow-down {
+         display: block;
+         position: absolute;
+         top: 0;
+         right: -50px;
+      }
    }
 
    .block4__title {
@@ -177,12 +198,20 @@
 }
 
 @media (min-width: 1200px) {
-   .block4__slider {
+   .block4__slider-round {
+
+      .arrow-down,
+      .arrow-up {
+         display: none;
+      }
+   }
+
+   .page__block4 {
       position: relative;
 
       .block4__android {
          position: absolute;
-         left: 28%;
+         left: 35%;
          bottom: 0;
          display: flex;
          align-items: center;
@@ -207,13 +236,13 @@
 
       .cosmonaut-left {
          width: 300px;
-         top: 22%;
+         top: 33%;
          left: 6%;
       }
 
       .cosmonaut-right {
          width: 246px;
-         bottom: 0%;
+         bottom: -1%;
          right: 4%;
       }
 
@@ -222,31 +251,56 @@
       .arrow3-1440,
       .arrow4-1440,
       .cosmonaut-left,
-      .cosmonaut-right {
+      .cosmonaut-right,
+      .cosmonaut-left-light,
+      .cosmonaut-right-light {
          display: block;
          position: absolute;
       }
 
+      .cosmonaut-left-light {
+         width: 297.86px;
+         height: 174.79px;
+         border-radius: 50%;
+         z-index: -2;
+         top: 39%;
+         left: 6%;
+         background: linear-gradient(90deg, #800BF5 26.67%, #25C6F9 97.33%);
+         filter: blur(100px);
+         transform: rotate(24.94deg);
+      }
+
+      .cosmonaut-right-light {
+         z-index: -3;
+         width: 1440px;
+         height: 554px;
+         border-radius: 50%;
+         background: #800BF5;
+         filter: blur(300px);
+         bottom: -15%;
+         right: -54%;
+      }
+
       .arrow1-1440 {
-         right: 35%;
-         top: 20%;
+         right: 38%;
+         top: 29%;
       }
 
       .arrow2-1440 {
          z-index: 5;
          left: 28%;
-         top: 45%;
+         top: 48%;
          width: 200px;
       }
 
       .arrow3-1440 {
          bottom: 24%;
-         right: 39%;
+         right: 41%;
          width: 193px;
       }
 
       .arrow4-1440 {
-         left: 42%;
+         left: 45%;
          bottom: 5%;
       }
    }
@@ -292,7 +346,7 @@
       #block1 {
          position: absolute;
          width: 336px;
-         left: 300px;
+         left: 328px;
          top: 0;
       }
 
@@ -300,21 +354,21 @@
          position: absolute;
          width: 336px;
          right: 286px;
-         top: 472px;
+         top: 424px;
       }
 
       #block3 {
          position: absolute;
          width: 336px;
          left: 172px;
-         top: 777px;
+         top: 715px;
       }
 
       #block4 {
          position: absolute;
          width: 280px;
-         right: 320px;
-         bottom: 0;
+         right: 347px;
+         bottom: 34px;
 
          .block4__slider-round {
             height: 280px;
