@@ -65,7 +65,7 @@
 					z-index: 2;
 				}
 				@extend %buttonMainStyle;
-				width: inherit;
+				width: inherit!important;
 			}
 		}
 	}

@@ -73,6 +73,7 @@ h6 {
    font-size: inherit;
 }
 
+.choise-block > .choise-btn > button,
 .header > .header-container-main > .header-play-main > button,
 .header .header-container-hidden > .header-play > button {
    position: relative;
@@ -83,6 +84,7 @@ h6 {
    transition: all 0.6s ease;
 }
 
+.choise-block > .choise-btn > button::before,
 .header > .header-container-main > .header-play-main > button::before,
 .header .header-container-hidden > .header-play > button::before {
    content: "";
@@ -98,6 +100,7 @@ h6 {
    transition: inherit;
 }
 
+.choise-block > .choise-btn > button:hover::before,
 .header > .header-container-main > .header-play-main > button:hover::before,
 .header .header-container-hidden > .header-play > button:hover::before {
    opacity: 1;
@@ -148,6 +151,7 @@ body {
    background-color: #14063D;
 }
 
+.choise-block > .choise-btn > button,
 .header > .header-container-main > .header-play-main > button,
 .header .header-container-hidden > .header-play > button {
    position: relative;
@@ -158,6 +162,7 @@ body {
    transition: all 0.6s ease;
 }
 
+.choise-block > .choise-btn > button::before,
 .header > .header-container-main > .header-play-main > button::before,
 .header .header-container-hidden > .header-play > button::before {
    content: "";
@@ -173,6 +178,7 @@ body {
    transition: inherit;
 }
 
+.choise-block > .choise-btn > button:hover::before,
 .header > .header-container-main > .header-play-main > button:hover::before,
 .header .header-container-hidden > .header-play > button:hover::before {
    opacity: 1;
@@ -266,7 +272,7 @@ body {
 }
 
 .header .header-container-hidden > .header-play > button {
-   width: inherit;
+   width: inherit !important;
 }
 
 .header .header-container-hidden > .header-play > button > span {
@@ -506,6 +512,7 @@ body {
    width: 100%;
 }
 
+.choise-block > .choise-btn > button,
 .header .header-container-hidden > .header-play > button,
 .header > .header-container-main > .header-play-main > button {
    position: relative;
@@ -516,6 +523,7 @@ body {
    transition: all 0.6s ease;
 }
 
+.choise-block > .choise-btn > button::before,
 .header .header-container-hidden > .header-play > button::before,
 .header > .header-container-main > .header-play-main > button::before {
    content: "";
@@ -531,6 +539,7 @@ body {
    transition: inherit;
 }
 
+.choise-block > .choise-btn > button:hover::before,
 .header .header-container-hidden > .header-play > button:hover::before,
 .header > .header-container-main > .header-play-main > button:hover::before {
    opacity: 1;
@@ -657,6 +666,117 @@ body {
    font-size: 0;
 }
 
+.choise-block > .choise-btn > button,
+.header .header-container-hidden > .header-play > button,
+.header > .header-container-main > .header-play-main > button {
+   position: relative;
+   border-radius: 56px;
+   width: 200px;
+   height: 50px;
+   background: linear-gradient(90deg, #800BF5 26.67%, #25C6F9 97.33%);
+   transition: all 0.6s ease;
+}
+
+.choise-block > .choise-btn > button::before,
+.header .header-container-hidden > .header-play > button::before,
+.header > .header-container-main > .header-play-main > button::before {
+   content: "";
+   display: block;
+   position: absolute;
+   top: -1px;
+   width: 100%;
+   height: 52px;
+   left: 0px;
+   background: linear-gradient(270deg, #800bf5 26.67%, #25c6f9 97.33%);
+   border-radius: 56px;
+   opacity: 0;
+   transition: inherit;
+}
+
+.choise-block > .choise-btn > button:hover::before,
+.header .header-container-hidden > .header-play > button:hover::before,
+.header > .header-container-main > .header-play-main > button:hover::before {
+   opacity: 1;
+}
+
+.block4__billet {
+   font-family: "PT Sans", sans-serif;
+   font-weight: 700;
+   font-size: 12px;
+   line-height: 120%;
+   letter-spacing: 0.1em;
+   text-transform: uppercase;
+   opacity: 0.6;
+   border: 1px solid rgba(255, 255, 255, 0.6);
+   padding: 7px 17px;
+   border-radius: 56px;
+   display: inline-block;
+}
+
+.block4__title {
+   font-family: "Russo One", sans-serif;
+   font-size: 24px;
+   line-height: 120%;
+}
+
+.choise-block {
+   display: block;
+}
+
+.choise-block > p:not(:first-of-type) {
+   text-align: center;
+}
+
+.choise-block > p:first-of-type {
+   margin-bottom: 20px;
+}
+
+.choise-block > .choise-btn:first-of-type,
+.choise-block > p:last-of-type {
+   margin-bottom: 10px;
+}
+
+.choise-block > p {
+   font-family: "PT Sans", sans-serif;
+   font-style: normal;
+   font-weight: 700;
+   font-size: 20px;
+   line-height: 130%;
+   font-feature-settings: "ss05" on;
+   color: #fff;
+}
+
+.choise-block > .choise-btn {
+   width: 100%;
+}
+
+.choise-block > .choise-btn > button {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: inherit !important;
+}
+
+.choise-block > .choise-btn > button > span,
+.choise-block > .choise-btn > button img {
+   position: relative;
+   z-index: 2;
+}
+
+.choise-block > .choise-btn > button > span {
+   font-family: "PT Sans", sans-serif;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 120%;
+   font-feature-settings: "ss05" on;
+   color: #fff;
+}
+
+.choise-block > .choise-btn > button > img {
+   margin-right: 10px;
+}
+
 @media (min-width: 425px) {
    .block1 form {
       height: 65px;
@@ -682,7 +802,8 @@ body {
 }
 
 @media screen and (min-width: 630px) {
-   .header > .header-container-main > .header-play-main > button,
+   .choise-block > .choise-btn > button,
+  .header > .header-container-main > .header-play-main > button,
   .header .header-container-hidden > .header-play > button {
       position: relative;
       border-radius: 56px;
@@ -692,7 +813,8 @@ body {
       transition: all 0.6s ease;
    }
 
-   .header > .header-container-main > .header-play-main > button::before,
+   .choise-block > .choise-btn > button::before,
+  .header > .header-container-main > .header-play-main > button::before,
   .header .header-container-hidden > .header-play > button::before {
       content: "";
       display: block;
@@ -707,12 +829,14 @@ body {
       transition: inherit;
    }
 
-   .header > .header-container-main > .header-play-main > button:hover::before,
+   .choise-block > .choise-btn > button:hover::before,
+  .header > .header-container-main > .header-play-main > button:hover::before,
   .header .header-container-hidden > .header-play > button:hover::before {
       opacity: 1;
    }
 
-   .header > .header-container-main > .header-play-main > button,
+   .choise-block > .choise-btn > button,
+  .header > .header-container-main > .header-play-main > button,
   .header .header-container-hidden > .header-play > button {
       position: relative;
       border-radius: 56px;
@@ -722,7 +846,8 @@ body {
       transition: all 0.6s ease;
    }
 
-   .header > .header-container-main > .header-play-main > button::before,
+   .choise-block > .choise-btn > button::before,
+  .header > .header-container-main > .header-play-main > button::before,
   .header .header-container-hidden > .header-play > button::before {
       content: "";
       display: block;
@@ -737,7 +862,8 @@ body {
       transition: inherit;
    }
 
-   .header > .header-container-main > .header-play-main > button:hover::before,
+   .choise-block > .choise-btn > button:hover::before,
+  .header > .header-container-main > .header-play-main > button:hover::before,
   .header .header-container-hidden > .header-play > button:hover::before {
       opacity: 1;
    }
@@ -800,7 +926,8 @@ body {
       margin-bottom: 50px;
    }
 
-   .header .header-container-hidden > .header-play > button,
+   .choise-block > .choise-btn > button,
+  .header .header-container-hidden > .header-play > button,
   .header > .header-container-main > .header-play-main > button {
       position: relative;
       border-radius: 56px;
@@ -810,7 +937,8 @@ body {
       transition: all 0.6s ease;
    }
 
-   .header .header-container-hidden > .header-play > button::before,
+   .choise-block > .choise-btn > button::before,
+  .header .header-container-hidden > .header-play > button::before,
   .header > .header-container-main > .header-play-main > button::before {
       content: "";
       display: block;
@@ -825,9 +953,76 @@ body {
       transition: inherit;
    }
 
-   .header .header-container-hidden > .header-play > button:hover::before,
+   .choise-block > .choise-btn > button:hover::before,
+  .header .header-container-hidden > .header-play > button:hover::before,
   .header > .header-container-main > .header-play-main > button:hover::before {
       opacity: 1;
+   }
+
+   .choise-block > .choise-btn > button,
+  .header .header-container-hidden > .header-play > button,
+  .header > .header-container-main > .header-play-main > button {
+      position: relative;
+      border-radius: 56px;
+      width: 200px;
+      height: 50px;
+      background: linear-gradient(90deg, #800BF5 26.67%, #25C6F9 97.33%);
+      transition: all 0.6s ease;
+   }
+
+   .choise-block > .choise-btn > button::before,
+  .header .header-container-hidden > .header-play > button::before,
+  .header > .header-container-main > .header-play-main > button::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: -1px;
+      width: 202px;
+      height: 52px;
+      left: 0px;
+      background: linear-gradient(270deg, #800bf5 26.67%, #25c6f9 97.33%);
+      border-radius: 56px;
+      opacity: 0;
+      transition: inherit;
+   }
+
+   .choise-block > .choise-btn > button:hover::before,
+  .header .header-container-hidden > .header-play > button:hover::before,
+  .header > .header-container-main > .header-play-main > button:hover::before {
+      opacity: 1;
+   }
+
+   .choise-block {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+   }
+
+   .choise-block > p:first-of-type {
+      margin-bottom: 30px;
+      width: 100%;
+   }
+
+   .choise-block > p {
+      font-size: 28px;
+   }
+
+   .choise-block > .choise-btn:first-of-type,
+  .choise-block > p:last-of-type {
+      margin-bottom: 0;
+   }
+
+   .choise-block > .choise-btn {
+      width: 40%;
+   }
+
+   .choise-block > .choise-btn > button {
+      width: 100% !important;
+   }
+
+   .choise-block > .choise-btn > button::before {
+      width: 100% !important;
    }
 }
 
@@ -880,6 +1075,12 @@ body {
 
    .block1__img img {
       width: 80%;
+   }
+}
+
+@media screen and (min-width: 900px) {
+   .choise-block {
+      display: none;
    }
 }
 

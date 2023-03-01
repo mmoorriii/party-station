@@ -1,0 +1,81 @@
+@import 'extends';
+
+.choise-block{
+	display: block;
+
+	&>p:not(:first-of-type){text-align: center;}
+	&>p:first-of-type{margin-bottom: 20px;}
+
+	&>.choise-btn:first-of-type, 
+	&>p:last-of-type{margin-bottom: 10px;}
+
+	>p{
+		font-family: $fontText;
+		font-style: normal;
+		font-weight: 700;
+		font-size: 20px;
+		line-height: 130%;
+		font-feature-settings: 'ss05' on;
+		color: $mainColor;
+	}
+
+	>.choise-btn{
+		width: 100%;
+
+		>button{
+			@extend %buttonMainStyle;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: inherit!important;
+			
+			>span, img{
+				position: relative;
+				z-index: 2;
+			}
+
+			>span{
+				font-family: $fontText;
+				font-style: normal;
+				font-weight: 400;
+				font-size: 16px;
+				line-height: 120%;
+				font-feature-settings: 'ss05' on;
+				color: $mainColor;
+			}
+
+			>img{margin-right: 10px;}
+		}
+	}
+}
+
+@media screen and (min-width: 630px){
+	.choise-block{
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-between;
+
+		&>p:first-of-type{
+			margin-bottom: 30px;
+			width: 100%;
+		}
+		
+		>p{font-size: 28px;}
+		
+		&>.choise-btn:first-of-type, 
+		&>p:last-of-type{margin-bottom: 0;}
+
+		>.choise-btn{
+			width: 40%;
+			>button{
+				width: 100%!important;
+				&::before{width: 100%!important;}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 900px){
+	.choise-block{display: none;}
+}
