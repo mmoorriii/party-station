@@ -69,4 +69,47 @@
    display: inline-block;
 }
 
-//----------------------------------------------------------------------------------------------
+//-------ROUND BUTTON---------------------------------------------------------------------------------------
+%roundButton {
+   .slick-arrow {
+      font-size: 0;
+      border: none;
+      width: 54px;
+      height: 54px;
+      border-radius: 50%;
+      position: relative;
+      background: #5211ad;
+      transition: all .6s ease;
+      cursor: pointer;
+
+      &.disable {
+         transition: none;
+         background: transparent;
+         border: 2px solid #14063d4f;
+         pointer-events: none;
+      }
+
+      &:hover {
+         background: linear-gradient(0deg, #800BF5 26.67%, #25C6F9 97.33%);
+      }
+
+      &::before {
+         content: "";
+         display: block;
+         position: absolute;
+         z-index: -2;
+         top: -1.4px;
+         left: -1.2px;
+         width: 57px;
+         height: 57px;
+         background: linear-gradient(0deg, #800BF5 26.67%, #25C6F9 97.33%);
+         border-radius: 50%;
+      }
+
+      &.disable {
+         &::before {
+            background: none;
+         }
+      }
+   }
+}
