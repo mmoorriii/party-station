@@ -1,0 +1,22 @@
+<svg width="244" height="140" viewBox="0 0 244 140" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<rect width="244" height="140" rx="16" fill="url(#pattern0)"/>
+<rect width="244" height="140" rx="16" fill="url(#pattern1)"/>
+<rect width="244" height="140" rx="16" fill="url(#pattern2)"/>
+<rect width="244" height="140" rx="16" fill="url(#pattern3)"/>
+<rect width="244" height="140" rx="16" fill="url(#pattern4)"/>
+<defs>
+<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_74_8334" transform="matrix(0.0015625 0 0 0.00272321 0 -0.0868527)"/>
+</pattern>
+<pattern id="pattern1" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image1_74_8334" transform="matrix(0.000286123 0 0 0.000498672 0 -0.0689843)"/>
+</pattern>
+<pattern id="pattern2" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_74_8334" transform="matrix(0.0015625 0 0 0.00272321 0 -0.0868527)"/>
+</pattern>
+<pattern id="pattern3" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image2_74_8334" transform="matrix(0.00151515 0 0 0.00264069 0 -0.0690693)"/>
+</pattern>
+<pattern id="pattern4" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image3_74_8334" transform="matrix(0.000265634 0 0 0.000462963 -0.0100182 0)"/>
+</pattern>
