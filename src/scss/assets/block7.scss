@@ -6,7 +6,11 @@
 }
 
 .block7__slider {
-   &:not(:last-child) {
+   &:nth-child(1) {
+      margin-bottom: 55px;
+   }
+
+   &:nth-child(2) {
       margin-bottom: 55px;
    }
 }
@@ -101,7 +105,11 @@
    }
 
    .block7__slider {
-      &:not(:last-child) {
+      &:nth-child(1) {
+         margin-bottom: 80px;
+      }
+
+      &:nth-child(2) {
          margin-bottom: 80px;
       }
    }
@@ -134,7 +142,11 @@
    }
 
    .block7__slider {
-      &:not(:last-child) {
+      &:nth-child(1) {
+         margin-bottom: 100px;
+      }
+
+      &:nth-child(2) {
          margin-bottom: 100px;
       }
    }
@@ -150,44 +162,44 @@
 
       .slick-next {
          background-image: url('../img/right.svg');
-         background-size: 25px auto;
+         background-size: 10px auto;
          background-repeat: no-repeat;
-         background-position: 15px center;
+         background-position: center;
 
          &.disable {
-            background: url('../img/right_arrow_icon_disable.svg') 15px center / 25px auto no-repeat;
+            background: url('../img/right_disable.svg') center / 10px auto no-repeat;
          }
 
          &:hover {
-            background: url('/src/img/right.svg') 15px center / 25px auto no-repeat,
+            background: url('../img/right.svg') center / 10px auto no-repeat,
                linear-gradient(0deg, #800BF5 26.67%, #25C6F9 97.33%);
          }
 
          &.disable {
             &:hover {
-               background: url('../img/right_arrow_icon_disable.svg') 15px center / 25px auto no-repeat;
+               background: url('../img/right_disable.svg') center / 10px auto no-repeat;
             }
          }
       }
 
       .slick-prev {
          background-image: url('../img/left.svg');
-         background-size: 25px auto;
+         background-size: 10px auto;
          background-repeat: no-repeat;
-         background-position: 15px center;
+         background-position: center;
 
          &.disable {
-            background: url('../img/left_arrow_icon_disable.svg') 15px center / 25px auto no-repeat;
+            background: url('../img/left_disable.svg') center / 10px auto no-repeat;
          }
 
          &:hover {
-            background: url('../img/left.svg') 15px center / 25px auto no-repeat,
+            background: url('../img/left.svg') center / 10px auto no-repeat,
                linear-gradient(0deg, #800BF5 26.67%, #25C6F9 97.33%);
          }
 
          &.disable {
             &:hover {
-               background: url('../img/left_arrow_icon_disable.svg') 15px center / 25px auto no-repeat;
+               background: url('../img/left_disable.svg') center / 10px auto no-repeat;
             }
          }
       }
@@ -195,27 +207,27 @@
 
    .block7__buttons-for-family {
       .slick-arrow {
-         background: #472eb5;
+         background: #3f31a9;
 
          &.slick-next {
-            background-image: url('../img/right_arrow_icon.svg');
-            background-size: 25px auto;
+            background-image: url('../img/right.svg');
+            background-size: 10px auto;
             background-repeat: no-repeat;
-            background-position: 15px center;
+            background-position: center;
 
             &.disable {
-               background: url('../img/right_arrow_icon_disable.svg') 15px center / 25px auto no-repeat;
+               background: url('../img/right_disable.svg')center / 10px auto no-repeat;
             }
          }
 
          &.slick-prev {
-            background-image: url('../img/left_arrow_icon.svg');
-            background-size: 25px auto;
+            background-image: url('../img/left.svg');
+            background-size: 10px auto;
             background-repeat: no-repeat;
-            background-position: 15px center;
+            background-position: center;
 
             &.disable {
-               background: url('../img/left_arrow_icon_disable.svg') 15px center / 25px auto no-repeat;
+               background: url('../img/left_disable.svg') center / 10px auto no-repeat;
             }
          }
       }
@@ -226,24 +238,24 @@
          background: #34258d;
 
          &.slick-next {
-            background-image: url('../img/right_arrow_icon.svg');
-            background-size: 25px auto;
+            background-image: url('../img/right.svg');
+            background-size: 10px auto;
             background-repeat: no-repeat;
-            background-position: 15px center;
+            background-position: center;
 
             &.disable {
-               background: url('../img/right_arrow_icon_disable.svg') 15px center / 25px auto no-repeat;
+               background: url('../img/right_disable.svg') center / 10px auto no-repeat;
             }
          }
 
          &.slick-prev {
-            background-image: url('../img/left_arrow_icon.svg');
-            background-size: 25px auto;
+            background-image: url('../img/left.svg');
+            background-size: 10px auto;
             background-repeat: no-repeat;
-            background-position: 15px center;
+            background-position: center;
 
             &.disable {
-               background: url('../img/left_arrow_icon_disable.svg') 15px center / 25px auto no-repeat;
+               background: url('../img/left_disable.svg')center / 10px auto no-repeat;
             }
          }
       }
@@ -260,6 +272,7 @@
 
       .slick-slide {
          width: 336px;
+         height: auto;
 
          &:not(:last-child) {
             margin-right: 24px;

@@ -31,7 +31,9 @@ $(document).ready(function () {
          waitForAnimate: false,
       });
    } else {
-      $('.block7__row').slick('unslick');
+      $('.block7__row-news').slick('unslick');
+      $('.block7__row-for-family').slick('unslick');
+      $('.block7__row-for-clever').slick('unslick');
    };
 
    $('.block7__row-news').on('afterChange', function (event, slick, currentSlide) {
