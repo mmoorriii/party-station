@@ -149,7 +149,7 @@
       justify-content: space-between;
 
       .slick-next {
-         background-image: url('../img/right_arrow_icon.svg');
+         background-image: url('../img/right.svg');
          background-size: 25px auto;
          background-repeat: no-repeat;
          background-position: 15px center;
@@ -159,7 +159,7 @@
          }
 
          &:hover {
-            background: url('../img/right_arrow_icon.svg') 15px center / 25px auto no-repeat,
+            background: url('/src/img/right.svg') 15px center / 25px auto no-repeat,
                linear-gradient(0deg, #800BF5 26.67%, #25C6F9 97.33%);
          }
 
@@ -171,7 +171,7 @@
       }
 
       .slick-prev {
-         background-image: url('../img/left_arrow_icon.svg');
+         background-image: url('../img/left.svg');
          background-size: 25px auto;
          background-repeat: no-repeat;
          background-position: 15px center;
@@ -181,7 +181,7 @@
          }
 
          &:hover {
-            background: url('../img/left_arrow_icon.svg') 15px center / 25px auto no-repeat,
+            background: url('../img/left.svg') 15px center / 25px auto no-repeat,
                linear-gradient(0deg, #800BF5 26.67%, #25C6F9 97.33%);
          }
 
