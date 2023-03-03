@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400,700&display=swap");
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:regular,700);
 
 @import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
 
@@ -106,7 +106,10 @@ h6 {
    opacity: 1;
 }
 
+<<<<<<< HEAD
 .block8-buy-subscribe > .subscribe-title,
+=======
+>>>>>>> 871cc8bd58a06598f9e0b38e84ff7128867c9fa6
 .block6-slider-games > .slider-games-title > div:first-of-type,
 .block4__billet {
    font-family: "PT Sans", sans-serif;
@@ -129,7 +132,7 @@ h6 {
    height: 54px;
    border-radius: 50%;
    position: relative;
-   background: #5211ad;
+   background: #29166b;
    transition: all 0.6s ease;
    cursor: pointer;
 }
@@ -137,7 +140,7 @@ h6 {
 .block7__buttons .slick-arrow.disable {
    transition: none;
    background: transparent;
-   border: 2px solid rgba(20, 6, 61, 0.3098039216);
+   border: 2px solid #14063D;
    pointer-events: none;
 }
 
@@ -220,7 +223,10 @@ body {
    opacity: 1;
 }
 
+<<<<<<< HEAD
 .block8-buy-subscribe > .subscribe-title,
+=======
+>>>>>>> 871cc8bd58a06598f9e0b38e84ff7128867c9fa6
 .block6-slider-games > .slider-games-title > div:first-of-type,
 .block4__billet {
    font-family: "PT Sans", sans-serif;
@@ -243,7 +249,7 @@ body {
    height: 54px;
    border-radius: 50%;
    position: relative;
-   background: #5211ad;
+   background: #29166b;
    transition: all 0.6s ease;
    cursor: pointer;
 }
@@ -251,7 +257,7 @@ body {
 .block7__buttons .slick-arrow.disable {
    transition: none;
    background: transparent;
-   border: 2px solid rgba(20, 6, 61, 0.3098039216);
+   border: 2px solid #14063D;
    pointer-events: none;
 }
 
@@ -431,9 +437,9 @@ body {
 }
 
 .block1 button img {
-   width: 20px;
+   width: 9px;
    position: relative;
-   top: 3px;
+   top: 2px;
    transition: all 0.4s ease;
 }
 
@@ -613,7 +619,10 @@ body {
    opacity: 1;
 }
 
+<<<<<<< HEAD
 .block8-buy-subscribe > .subscribe-title,
+=======
+>>>>>>> 871cc8bd58a06598f9e0b38e84ff7128867c9fa6
 .block6-slider-games > .slider-games-title > div:first-of-type,
 .block4__billet {
    font-family: "PT Sans", sans-serif;
@@ -636,7 +645,7 @@ body {
    height: 54px;
    border-radius: 50%;
    position: relative;
-   background: #5211ad;
+   background: #29166b;
    transition: all 0.6s ease;
    cursor: pointer;
 }
@@ -644,7 +653,7 @@ body {
 .block7__buttons .slick-arrow.disable {
    transition: none;
    background: transparent;
-   border: 2px solid rgba(20, 6, 61, 0.3098039216);
+   border: 2px solid #14063D;
    pointer-events: none;
 }
 
@@ -846,7 +855,10 @@ body {
    opacity: 1;
 }
 
+<<<<<<< HEAD
 .block8-buy-subscribe > .subscribe-title,
+=======
+>>>>>>> 871cc8bd58a06598f9e0b38e84ff7128867c9fa6
 .block6-slider-games > .slider-games-title > div:first-of-type,
 .block4__billet {
    font-family: "PT Sans", sans-serif;
@@ -869,7 +881,7 @@ body {
    height: 54px;
    border-radius: 50%;
    position: relative;
-   background: #5211ad;
+   background: #29166b;
    transition: all 0.6s ease;
    cursor: pointer;
 }
@@ -877,7 +889,7 @@ body {
 .block7__buttons .slick-arrow.disable {
    transition: none;
    background: transparent;
-   border: 2px solid rgba(20, 6, 61, 0.3098039216);
+   border: 2px solid #14063D;
    pointer-events: none;
 }
 
@@ -1009,7 +1021,10 @@ body {
    opacity: 1;
 }
 
+<<<<<<< HEAD
 .block8-buy-subscribe > .subscribe-title,
+=======
+>>>>>>> 871cc8bd58a06598f9e0b38e84ff7128867c9fa6
 .block6-slider-games > .slider-games-title > div:first-of-type,
 .block4__billet {
    font-family: "PT Sans", sans-serif;
@@ -1032,7 +1047,7 @@ body {
    height: 54px;
    border-radius: 50%;
    position: relative;
-   background: #5211ad;
+   background: #29166b;
    transition: all 0.6s ease;
    cursor: pointer;
 }
@@ -1040,7 +1055,7 @@ body {
 .block7__buttons .slick-arrow.disable {
    transition: none;
    background: transparent;
-   border: 2px solid rgba(20, 6, 61, 0.3098039216);
+   border: 2px solid #14063D;
    pointer-events: none;
 }
 
@@ -1304,7 +1319,10 @@ body {
    opacity: 1;
 }
 
+<<<<<<< HEAD
 .block8-buy-subscribe > .subscribe-title,
+=======
+>>>>>>> 871cc8bd58a06598f9e0b38e84ff7128867c9fa6
 .block4__billet,
 .block6-slider-games > .slider-games-title > div:first-of-type {
    font-family: "PT Sans", sans-serif;
@@ -1327,7 +1345,7 @@ body {
    height: 54px;
    border-radius: 50%;
    position: relative;
-   background: #5211ad;
+   background: #29166b;
    transition: all 0.6s ease;
    cursor: pointer;
 }
@@ -1335,7 +1353,7 @@ body {
 .block7__buttons .slick-arrow.disable {
    transition: none;
    background: transparent;
-   border: 2px solid rgba(20, 6, 61, 0.3098039216);
+   border: 2px solid #14063D;
    pointer-events: none;
 }
 
@@ -1364,7 +1382,11 @@ body {
    margin-bottom: 25px;
 }
 
-.block7__slider:not(:last-child) {
+.block7__slider:nth-child(1) {
+   margin-bottom: 55px;
+}
+
+.block7__slider:nth-child(2) {
    margin-bottom: 55px;
 }
 
@@ -1440,6 +1462,7 @@ body {
    object-fit: cover;
 }
 
+<<<<<<< HEAD
 .header .header-container-hidden > .header-play > button,
 .header > .header-container-main > .header-play-main > button,
 .choise-block > .choise-btn > button {
@@ -1592,6 +1615,8 @@ body {
    filter: blur(10px);
 }
 
+=======
+>>>>>>> 871cc8bd58a06598f9e0b38e84ff7128867c9fa6
 @media screen and (min-width: 200px) {
    .block6-slider-games > .slider-games-title > p:last-of-type {
       width: 310px;
@@ -1630,7 +1655,7 @@ body {
    }
 
    .block1 button img {
-      width: 25px;
+      width: 12px;
    }
 
    .block1 input {
@@ -1956,6 +1981,7 @@ body {
    }
 
    .header .header-container-hidden > .header-play > button:hover::before,
+<<<<<<< HEAD
   .header > .header-container-main > .header-play-main > button:hover::before,
   .choise-block > .choise-btn > button:hover::before {
       opacity: 1;
@@ -1989,6 +2015,8 @@ body {
    }
 
    .header .header-container-hidden > .header-play > button:hover::before,
+=======
+>>>>>>> 871cc8bd58a06598f9e0b38e84ff7128867c9fa6
   .header > .header-container-main > .header-play-main > button:hover::before,
   .choise-block > .choise-btn > button:hover::before {
       opacity: 1;
@@ -2028,7 +2056,7 @@ body {
    }
 
    .block1 button img {
-      width: 30px;
+      width: 14px;
    }
 
    .block1__img .ghost-owo {
@@ -2107,7 +2135,11 @@ body {
       z-index: -4;
    }
 
-   .block7__slider:not(:last-child) {
+   .block7__slider:nth-child(1) {
+      margin-bottom: 80px;
+   }
+
+   .block7__slider:nth-child(2) {
       margin-bottom: 80px;
    }
 
@@ -2468,6 +2500,7 @@ body {
 
    .page__block4 {
       position: relative;
+      margin-bottom: 110px;
    }
 
    .page__block4 .bubble {
@@ -2520,7 +2553,11 @@ body {
       margin-bottom: 50px;
    }
 
-   .block7__slider:not(:last-child) {
+   .block7__slider:nth-child(1) {
+      margin-bottom: 100px;
+   }
+
+   .block7__slider:nth-child(2) {
       margin-bottom: 100px;
    }
 
@@ -2536,66 +2573,66 @@ body {
 
    .block7__buttons .slick-next {
       background-image: url("../img/right.svg");
-      background-size: 25px auto;
+      background-size: 10px auto;
       background-repeat: no-repeat;
-      background-position: 15px center;
+      background-position: center;
    }
 
    .block7__buttons .slick-next.disable {
-      background: url("../img/right_arrow_icon_disable.svg") 15px center/25px auto no-repeat;
+      background: url("../img/right_disable.svg") center/10px auto no-repeat;
    }
 
    .block7__buttons .slick-next:hover {
-      background: url("/src/img/right.svg") 15px center/25px auto no-repeat, linear-gradient(0deg, #800BF5 26.67%, #25C6F9 97.33%);
+      background: url("../img/right.svg") center/10px auto no-repeat, linear-gradient(0deg, #800BF5 26.67%, #25C6F9 97.33%);
    }
 
    .block7__buttons .slick-next.disable:hover {
-      background: url("../img/right_arrow_icon_disable.svg") 15px center/25px auto no-repeat;
+      background: url("../img/right_disable.svg") center/10px auto no-repeat;
    }
 
    .block7__buttons .slick-prev {
       background-image: url("../img/left.svg");
-      background-size: 25px auto;
+      background-size: 10px auto;
       background-repeat: no-repeat;
-      background-position: 15px center;
+      background-position: center;
    }
 
    .block7__buttons .slick-prev.disable {
-      background: url("../img/left_arrow_icon_disable.svg") 15px center/25px auto no-repeat;
+      background: url("../img/left_disable.svg") center/10px auto no-repeat;
    }
 
    .block7__buttons .slick-prev:hover {
-      background: url("../img/left.svg") 15px center/25px auto no-repeat, linear-gradient(0deg, #800BF5 26.67%, #25C6F9 97.33%);
+      background: url("../img/left.svg") center/10px auto no-repeat, linear-gradient(0deg, #800BF5 26.67%, #25C6F9 97.33%);
    }
 
    .block7__buttons .slick-prev.disable:hover {
-      background: url("../img/left_arrow_icon_disable.svg") 15px center/25px auto no-repeat;
+      background: url("../img/left_disable.svg") center/10px auto no-repeat;
    }
 
    .block7__buttons-for-family .slick-arrow {
-      background: #472eb5;
+      background: #3f31a9;
    }
 
    .block7__buttons-for-family .slick-arrow.slick-next {
-      background-image: url("../img/right_arrow_icon.svg");
-      background-size: 25px auto;
+      background-image: url("../img/right.svg");
+      background-size: 10px auto;
       background-repeat: no-repeat;
-      background-position: 15px center;
+      background-position: center;
    }
 
    .block7__buttons-for-family .slick-arrow.slick-next.disable {
-      background: url("../img/right_arrow_icon_disable.svg") 15px center/25px auto no-repeat;
+      background: url("../img/right_disable.svg") center/10px auto no-repeat;
    }
 
    .block7__buttons-for-family .slick-arrow.slick-prev {
-      background-image: url("../img/left_arrow_icon.svg");
-      background-size: 25px auto;
+      background-image: url("../img/left.svg");
+      background-size: 10px auto;
       background-repeat: no-repeat;
-      background-position: 15px center;
+      background-position: center;
    }
 
    .block7__buttons-for-family .slick-arrow.slick-prev.disable {
-      background: url("../img/left_arrow_icon_disable.svg") 15px center/25px auto no-repeat;
+      background: url("../img/left_disable.svg") center/10px auto no-repeat;
    }
 
    .block7__buttons-for-clever .slick-arrow {
@@ -2603,25 +2640,25 @@ body {
    }
 
    .block7__buttons-for-clever .slick-arrow.slick-next {
-      background-image: url("../img/right_arrow_icon.svg");
-      background-size: 25px auto;
+      background-image: url("../img/right.svg");
+      background-size: 10px auto;
       background-repeat: no-repeat;
-      background-position: 15px center;
+      background-position: center;
    }
 
    .block7__buttons-for-clever .slick-arrow.slick-next.disable {
-      background: url("../img/right_arrow_icon_disable.svg") 15px center/25px auto no-repeat;
+      background: url("../img/right_disable.svg") center/10px auto no-repeat;
    }
 
    .block7__buttons-for-clever .slick-arrow.slick-prev {
-      background-image: url("../img/left_arrow_icon.svg");
-      background-size: 25px auto;
+      background-image: url("../img/left.svg");
+      background-size: 10px auto;
       background-repeat: no-repeat;
-      background-position: 15px center;
+      background-position: center;
    }
 
    .block7__buttons-for-clever .slick-arrow.slick-prev.disable {
-      background: url("../img/left_arrow_icon_disable.svg") 15px center/25px auto no-repeat;
+      background: url("../img/left_disable.svg") center/10px auto no-repeat;
    }
 
    .block7__row {
@@ -2636,6 +2673,7 @@ body {
 
    .block7__row .slick-slide {
       width: 336px;
+      height: auto;
    }
 
    .block7__row .slick-slide:not(:last-child) {
