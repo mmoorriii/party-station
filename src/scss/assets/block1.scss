@@ -17,10 +17,15 @@
       backdrop-filter: blur(28px);
       border-radius: 136px;
       padding: 0 24px;
-      color: #FFFFFF;
+      color: rgba(255, 255, 255, 0.44);
 
       &::placeholder {
          color: #ffffffd6;
+         opacity: 0.4;
+      }
+
+      &.red-border {
+         border: 1px solid #ED3148;
       }
    }
 
@@ -168,6 +173,10 @@
          img {
             width: 14px;
          }
+      }
+
+      input {
+         padding: 0 40px;
       }
    }
 

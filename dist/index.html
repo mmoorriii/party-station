@@ -81,8 +81,8 @@
    </div>
    <div class="container">
       <form autocomplete="off">
-         <input type="text" placeholder="Введите email">
-         <button>
+         <input type="email" id="block1-input" placeholder="Введите email">
+         <button type="button" id="block1-button">
             <img src="../img/right.svg" alt="">
          </button>
       </form>
@@ -152,51 +152,52 @@
       <h2 class="block4__title">Partystation — новый способ развлечений для любой компании</h2>
    </div>
    <img class="bubble" src="../img/bubble.svg" alt="image bubble">
-   <img class="arrow1-1440" src="../img/arrow1-1440.svg" alt="">
-   <img class="cosmonaut-left" src="../img/cosmonavtov-net-left.svg" alt="">
-   <div class="cosmonaut-left-light"></div>
-   <img class="arrow2-1440" src="../img/arrow2-1440.svg" alt="">
-   <img class="arrow3-1440" src="../img/arrow3-1440.svg" alt="">
-   <img class="arrow4-1440" src="../img/arrow4-1440.svg" alt="">
-   <img class="cosmonaut-right" src="../img/cosmonavtov-net-right.svg" alt="">
-   <div class="cosmonaut-right-light"></div>
-   <div class="block4__slider">
-      <div class="block4__slider-body" id="block1">
-         <div class="block4__slider-round">
-            <p class="block4__slider-text">Собери друзей перед экраном ТВ и можно начинать вечеринку!</p>
-            <div class="block4__slider-number">01</div>
-            <img class="arrow-up" src="../img/arrow-up.svg" alt="">
+   <div class="block4__image-container">
+      <img class="arrow1-1440" src="../img/arrow1-1440.svg" alt="">
+      <img class="cosmonaut-left" src="../img/cosmonavtov-net-left.svg" alt="">
+      <div class="cosmonaut-left-light"></div>
+      <img class="arrow2-1440" src="../img/arrow2-1440.svg" alt="">
+      <img class="arrow3-1440" src="../img/arrow3-1440.svg" alt="">
+      <img class="arrow4-1440" src="../img/arrow4-1440.svg" alt="">
+      <img class="cosmonaut-right" src="../img/cosmonavtov-net-right.svg" alt="">
+      <div class="cosmonaut-right-light"></div>
+      <div class="block4__android">
+         <div class="android__icon">
+            <img src="../img/android.svg" alt="">
+         </div>
+         <div class="android__text">Так же доступно на AndroidTV</div>
+      </div>
+      <div class="block4__slider">
+         <div class="block4__slider-body" id="block1">
+            <div class="block4__slider-round">
+               <p class="block4__slider-text">Собери друзей перед экраном ТВ и можно начинать вечеринку!</p>
+               <div class="block4__slider-number">01</div>
+               <img class="arrow-up" src="../img/arrow-up.svg" alt="">
+            </div>
+         </div>
+         <div class="block4__slider-body" id="block2">
+            <div class="block4__slider-round">
+               <p class="block4__slider-text">Подключайте смартфоны к телевизору одним нажатием</p>
+               <div class="block4__slider-number">02</div>
+               <img class="arrow-down" src="../img/arrow-down.svg" alt="">
+            </div>
+         </div>
+         <div class="block4__slider-body" id="block3">
+            <div class="block4__slider-round">
+               <p class="block4__slider-text">Смартфоны в руках возьмут — игровые контроллеры</p>
+               <div class="block4__slider-number">03</div>
+               <img class="arrow-up" src="../img/arrow-up.svg" alt="">
+            </div>
+         </div>
+         <div class="block4__slider-body" id="block4">
+            <a href="#" class="block4__slider-round block4__slider-round_gradient-bg">
+               <p class="block4__slider-text">Начать играть</p>
+            </a>
          </div>
       </div>
-      <div class="block4__slider-body" id="block2">
-         <div class="block4__slider-round">
-            <p class="block4__slider-text">Подключайте смартфоны к телевизору одним нажатием</p>
-            <div class="block4__slider-number">02</div>
-            <img class="arrow-down" src="../img/arrow-down.svg" alt="">
-         </div>
-      </div>
-      <div class="block4__slider-body" id="block3">
-         <div class="block4__slider-round">
-            <p class="block4__slider-text">Смартфоны в руках возьмут — игровые контроллеры</p>
-            <div class="block4__slider-number">03</div>
-            <img class="arrow-up" src="../img/arrow-up.svg" alt="">
-         </div>
-      </div>
-      <div class="block4__slider-body" id="block4">
-         <a href="#" class="block4__slider-round block4__slider-round_gradient-bg">
-            <p class="block4__slider-text">Начать играть</p>
-         </a>
-      </div>
-   </div>
-   <div class="block4__android">
-      <div class="android__icon">
-         <img src="../img/android.svg" alt="">
-      </div>
-      <div class="android__text">Так же доступно на AndroidTV</div>
    </div>
    <div class="block4__slider-dots"></div>
 </div>
-
 
          <div class="container choise-block">
 	<p>Где хотите начать играть?</p>
@@ -457,7 +458,7 @@
             <p class="slider-top__text">Собери друзей перед экраном ТВ и можно начинать вечеринку!</p>
             <button class="slider-top__button"><span>Начать играть</span></button>
             <div class="slider-top__number">01</div>
-            <!--<div class="block9__ellipse-1440-left"></div>-->
+            <div class="block9__ellipse-1440-left"></div>
          </div>
          <div class="slider-top__body">
             <h3 class="slider-top__title">Мобильный телефон <br> в качестве <span>контроллера</span></h3>
@@ -465,7 +466,7 @@
                экране</p>
             <button class="slider-top__button"><span>Начать играть</span></button>
             <div class="slider-top__number">02</div>
-            <!--<div class="block9__ellipse-1440-left"></div>-->
+            <div class="block9__ellipse-1440-left"></div>
             <div class="block9__cubic-1440">
                <img src="../img/block9/cubic.svg" alt="">
             </div>
@@ -475,21 +476,21 @@
             <p class="slider-top__text">Простые правила, быстрые и интересные партии</p>
             <button class="slider-top__button"><span>Начать играть</span></button>
             <div class="slider-top__number">03</div>
-            <!--<div class="block9__ellipse-1440-left"></div>-->
+            <div class="block9__ellipse-1440-left"></div>
          </div>
       </div>
       <div class="block9__slider-bottom">
          <div class="slider-bottom__img">
             <img src="../img/block9/img1.png" alt="">
-            <!--<div class="block9__ellipse-1440-right"></div>-->
+            <div class="block9__ellipse-1440-right"></div>
          </div>
          <div class="slider-bottom__img">
             <img src="../img/block9/img2.png" alt="">
-            <!--<div class="block9__ellipse-1440-right"></div>-->
+            <div class="block9__ellipse-1440-right"></div>
          </div>
          <div class="slider-bottom__img">
             <img src="../img/block9/img3.png" alt="">
-            <!--<div class="block9__ellipse-1440-right"></div>-->
+            <div class="block9__ellipse-1440-right"></div>
          </div>
       </div>
    </div>
