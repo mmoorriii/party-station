@@ -1,5 +1,5 @@
 $(document).ready(function () {
-   if ($(window).width() <= 1200) {
+   if ($(window).width() <= 1020) {
       $('.block9__slider-top').slick({
          arrows: false,
          swipe: false,
@@ -16,6 +16,16 @@ $(document).ready(function () {
          appendDots: '.block9__slider-dots',
          asNavFor: '.block9__slider-top',
          adaptiveHeight: true,
+         mobileFirst: true,
+         responsive: [
+            {
+               breakpoint: 630,
+               settings: {
+                  centerMode: true,
+                  variableWidth: true
+               }
+            }
+         ]
       });
    } else {
       $('.block9__slider-top').slick('unslick');

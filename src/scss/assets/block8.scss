@@ -1,0 +1,145 @@
+@import '../extends';
+
+.block8-buy-subscribe{
+	>.subscribe-title{
+		@extend %billet;
+		padding: 8px 16px 7px;
+		margin-bottom: 50px;
+	}
+
+	>.block8-price-subscribe{
+		>.price{
+			background: -webkit-linear-gradient(135deg, rgb(21, 8, 58), rgb(78, 16, 139));
+			background: -moz-linear-gradient(135deg, rgb(21, 8, 58), rgb(78, 16, 139));
+			background: linear-gradient(135deg, rgb(21, 8, 58), rgb(78, 16, 139));
+			border-radius: 16px;
+			padding: 25px;
+			position: relative;
+			transition: all 400ms ease;
+			cursor: pointer;
+
+			&:first-child{margin-bottom: 55px;}
+
+			&:hover{
+				background: #800BF5;
+				transform: scale(1.1);
+			}
+
+			>p:first-child{
+				font-family: $fontTitles;
+				font-style: normal;
+				font-weight: 400;
+				font-size: 24px;
+				line-height: 120%;
+				font-feature-settings: 'ss05' on;
+				color: $mainColor;
+				margin-bottom: 15px;
+				position: relative;
+				z-index: 3;
+			}
+
+			>span:nth-child(2){
+				font-family: $fontText;
+				font-style: normal;
+				font-weight: 400;
+				font-size: 20px;
+				line-height: 120%;
+				font-feature-settings: 'ss05' on;
+				color: $mainColor;
+				position: relative;
+				z-index: 3;
+
+				>span{opacity: 0.4;}
+			}
+
+			>.figure{
+				position: absolute;
+				top: -30%;
+				right: 4%;
+				z-index: 5;
+
+				&:first-of-type{
+					filter: blur(10px);
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 630px){
+	.block8-buy-subscribe{
+		>.subscribe-title{
+			font-size: 14px;
+			margin-bottom: 60px;
+		}
+
+		>.block8-price-subscribe{
+			>.price{
+				>p:first-child{font-size: 32px;}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 750px) {
+	.block8-buy-subscribe{
+		>.subscribe-title{margin-bottom: 80px;}
+
+		>.block8-price-subscribe {
+			display: flex;
+			justify-content: space-between;
+
+			>.price {
+				width: 336px;
+				height: 336px;
+				text-align: center;
+				border-radius: 50%;
+				opacity: 0.87;
+				padding-top: 115px;
+
+				&:first-child {margin-bottom: 0;}
+
+				>.figure {
+					top: -14%;
+					right: 33%;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 900px) {
+	.block8-buy-subscribe{
+		>.block8-price-subscribe {
+			display: flex;
+			justify-content: space-around;
+		}
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.block8-buy-subscribe{
+		>.subscribe-title{margin-bottom: 120px;}
+
+		>.block8-price-subscribe {
+			display: flex;
+			justify-content: space-evenly;
+
+			>.price {
+				width: 448px;
+				height: 448px;
+				padding-top: 190px;
+				
+				>p:first-child{
+					font-size: 40px;
+					margin-bottom: 60px;
+				}
+				
+				>.figure {
+					top: -10%;
+					right: 40%;
+				}
+			}
+		}
+	}
+}

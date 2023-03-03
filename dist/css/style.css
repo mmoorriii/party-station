@@ -110,6 +110,7 @@ h6 {
 }
 
 .block9__billet,
+.block8-buy-subscribe > .subscribe-title,
 .block6-slider-games > .slider-games-title > div:first-of-type,
 .block4__billet {
    font-family: "PT Sans", sans-serif;
@@ -262,6 +263,7 @@ body {
 }
 
 .block9__billet,
+.block8-buy-subscribe > .subscribe-title,
 .block6-slider-games > .slider-games-title > div:first-of-type,
 .block4__billet {
    font-family: "PT Sans", sans-serif;
@@ -693,6 +695,7 @@ body {
 }
 
 .block9__billet,
+.block8-buy-subscribe > .subscribe-title,
 .block6-slider-games > .slider-games-title > div:first-of-type,
 .block4__billet {
    font-family: "PT Sans", sans-serif;
@@ -934,6 +937,7 @@ body {
 }
 
 .block9__billet,
+.block8-buy-subscribe > .subscribe-title,
 .block6-slider-games > .slider-games-title > div:first-of-type,
 .block4__billet {
    font-family: "PT Sans", sans-serif;
@@ -1135,6 +1139,7 @@ body {
 }
 
 .block9__billet,
+.block8-buy-subscribe > .subscribe-title,
 .block6-slider-games > .slider-games-title > div:first-of-type,
 .block4__billet {
    font-family: "PT Sans", sans-serif;
@@ -1468,6 +1473,7 @@ body {
 }
 
 .block9__billet,
+.block8-buy-subscribe > .subscribe-title,
 .block4__billet,
 .block6-slider-games > .slider-games-title > div:first-of-type {
    font-family: "PT Sans", sans-serif;
@@ -1679,6 +1685,7 @@ body {
 }
 
 .block9__billet,
+.block8-buy-subscribe > .subscribe-title,
 .block4__billet,
 .block6-slider-games > .slider-games-title > div:first-of-type {
    font-family: "PT Sans", sans-serif;
@@ -1769,8 +1776,201 @@ body {
    font-size: 0;
 }
 
+.block8-buy-subscribe > .subscribe-title {
+   padding: 8px 16px 7px;
+   margin-bottom: 50px;
+}
+
+.block8-buy-subscribe > .block8-price-subscribe > .price {
+   background: linear-gradient(135deg, rgb(21, 8, 58), rgb(78, 16, 139));
+   border-radius: 16px;
+   padding: 25px;
+   position: relative;
+   transition: all 400ms ease;
+   cursor: pointer;
+}
+
+.block8-buy-subscribe > .block8-price-subscribe > .price:first-child {
+   margin-bottom: 55px;
+}
+
+.block8-buy-subscribe > .block8-price-subscribe > .price:hover {
+   background: #800BF5;
+   transform: scale(1.1);
+}
+
+.block8-buy-subscribe > .block8-price-subscribe > .price > p:first-child {
+   font-family: "Russo One", sans-serif;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 24px;
+   line-height: 120%;
+   font-feature-settings: "ss05" on;
+   color: #fff;
+   margin-bottom: 15px;
+   position: relative;
+   z-index: 3;
+}
+
+.block8-buy-subscribe > .block8-price-subscribe > .price > span:nth-child(2) {
+   font-family: "PT Sans", sans-serif;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 120%;
+   font-feature-settings: "ss05" on;
+   color: #fff;
+   position: relative;
+   z-index: 3;
+}
+
+.block8-buy-subscribe > .block8-price-subscribe > .price > span:nth-child(2) > span {
+   opacity: 0.4;
+}
+
+.block8-buy-subscribe > .block8-price-subscribe > .price > .figure {
+   position: absolute;
+   top: -30%;
+   right: 4%;
+   z-index: 5;
+}
+
+.block8-buy-subscribe > .block8-price-subscribe > .price > .figure:first-of-type {
+   filter: blur(10px);
+}
+
+.slider-top__button,
+.header .header-container-hidden > .header-play > button,
+.header > .header-container-main > .header-play-main > button,
+.choise-block > .choise-btn > button {
+   position: relative;
+   border-radius: 56px;
+   width: 200px;
+   height: 50px;
+   background: linear-gradient(90deg, #800BF5 26.67%, #25C6F9 97.33%);
+   transition: all 0.6s ease;
+}
+
+.slider-top__button::before,
+.header .header-container-hidden > .header-play > button::before,
+.header > .header-container-main > .header-play-main > button::before,
+.choise-block > .choise-btn > button::before {
+   content: "";
+   display: block;
+   position: absolute;
+   top: -1px;
+   width: 100%;
+   height: 52px;
+   left: 0px;
+   background: linear-gradient(270deg, #800bf5 26.67%, #25c6f9 97.33%);
+   border-radius: 56px;
+   opacity: 0;
+   transition: inherit;
+}
+
+.slider-top__button:hover::before,
+.header .header-container-hidden > .header-play > button:hover::before,
+.header > .header-container-main > .header-play-main > button:hover::before,
+.choise-block > .choise-btn > button:hover::before {
+   opacity: 1;
+}
+
+.block9__billet,
+.block4__billet,
+.block6-slider-games > .slider-games-title > div:first-of-type,
+.block8-buy-subscribe > .subscribe-title {
+   font-family: "PT Sans", sans-serif;
+   font-weight: 700;
+   font-size: 12px;
+   line-height: 120%;
+   letter-spacing: 0.1em;
+   text-transform: uppercase;
+   opacity: 0.6;
+   border: 1px solid rgba(255, 255, 255, 0.6);
+   padding: 7px 17px;
+   border-radius: 56px;
+   display: inline-block;
+}
+
+.block7__buttons .slick-arrow {
+   font-size: 0;
+   border: none;
+   width: 54px;
+   height: 54px;
+   border-radius: 50%;
+   position: relative;
+   background: #29166b;
+   transition: all 0.6s ease;
+   cursor: pointer;
+}
+
+.block7__buttons .slick-arrow.disable {
+   transition: none;
+   background: transparent;
+   border: 2px solid #14063D;
+   pointer-events: none;
+}
+
+.block7__buttons .slick-arrow:hover {
+   background: linear-gradient(0deg, #800BF5 26.67%, #25C6F9 97.33%);
+}
+
+.block7__buttons .slick-arrow::before {
+   content: "";
+   display: block;
+   position: absolute;
+   z-index: -2;
+   top: -1.4px;
+   left: -1.2px;
+   width: 57px;
+   height: 57px;
+   background: linear-gradient(0deg, #800BF5 26.67%, #25C6F9 97.33%);
+   border-radius: 50%;
+}
+
+.block7__buttons .slick-arrow.disable::before {
+   background: none;
+}
+
+.block9__slider-dots .slick-dots,
+.block4__slider-dots .slick-dots {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.block9__slider-dots .slick-dots li,
+.block4__slider-dots .slick-dots li {
+   font-size: 0;
+   width: 8px;
+   height: 8px;
+   background-color: rgba(255, 255, 255, 0.2);
+   border-radius: 50%;
+   transition: all 0.5s ease;
+}
+
+.block9__slider-dots .slick-dots li:not(:last-child),
+.block4__slider-dots .slick-dots li:not(:last-child) {
+   margin-right: 8px;
+}
+
+.block9__slider-dots .slick-dots li.slick-active,
+.block4__slider-dots .slick-dots li.slick-active {
+   height: 8px;
+   background-color: rgb(255, 255, 255);
+   width: 24px;
+   border-radius: 8px;
+}
+
+.block9__slider-dots .slick-dots button,
+.block4__slider-dots .slick-dots button {
+   font-size: 0;
+}
+
 .block9 {
    margin-bottom: 25px;
+   position: relative;
+   overflow: hidden;
 }
 
 .block9__billet {
@@ -1780,12 +1980,14 @@ body {
 .block9__slider-top {
    margin-bottom: 35px;
    display: flex;
-   margin-left: 16px;
+}
+
+.block9__slider-top.slick-slider {
+   margin-left: 5%;
 }
 
 .slider-top__body {
    position: relative;
-   flex: 0 0 100%;
    margin-right: 16px;
 }
 
@@ -1831,16 +2033,23 @@ body {
 }
 
 .block9__slider-bottom .slick-list {
-   padding-left: 16px;
+   padding-left: 5%;
+}
+
+.block9__slider-bottom .slick-track {
+   display: flex;
+}
+
+.block9__slider-bottom .slick-slide {
+   flex: 0 1 auto;
 }
 
 .block9__slider-bottom .slick-slide:not(:last-child) {
    margin-right: 16px;
 }
 
-.slider-bottom__img {
-   width: 318px;
-   border: 1px solid red;
+.block9__slider-bottom .slick-slide img {
+   max-width: 595px;
 }
 
 .slider-bottom__img img {
@@ -1849,6 +2058,26 @@ body {
 
 .block9__slider-dots {
    margin-top: 16px;
+}
+
+.block9__ellipse-360 {
+   width: 395px;
+   height: 290px;
+   border-radius: 50%;
+   background: linear-gradient(90deg, #800BF5 26.67%, #25C6F9 97.33%);
+   filter: blur(150px);
+   position: absolute;
+   right: -157px;
+   bottom: -95px;
+   z-index: -3;
+}
+
+.block9__ellipse-630-left,
+.block9__ellipse-630-right,
+.block9__ellipse-1440-left,
+.block9__ellipse-1440-right,
+.block9__cubic-1440 {
+   display: none;
 }
 
 @media screen and (min-width: 200px) {
@@ -2273,6 +2502,51 @@ body {
   .choise-block > .choise-btn > button:hover::before {
       opacity: 1;
    }
+
+   .block8-buy-subscribe > .subscribe-title {
+      font-size: 14px;
+      margin-bottom: 60px;
+   }
+
+   .block8-buy-subscribe > .block8-price-subscribe > .price > p:first-child {
+      font-size: 32px;
+   }
+
+   .slider-top__button,
+  .header .header-container-hidden > .header-play > button,
+  .header > .header-container-main > .header-play-main > button,
+  .choise-block > .choise-btn > button {
+      position: relative;
+      border-radius: 56px;
+      width: 200px;
+      height: 50px;
+      background: linear-gradient(90deg, #800BF5 26.67%, #25C6F9 97.33%);
+      transition: all 0.6s ease;
+   }
+
+   .slider-top__button::before,
+  .header .header-container-hidden > .header-play > button::before,
+  .header > .header-container-main > .header-play-main > button::before,
+  .choise-block > .choise-btn > button::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: -1px;
+      width: 202px;
+      height: 52px;
+      left: 0px;
+      background: linear-gradient(270deg, #800bf5 26.67%, #25c6f9 97.33%);
+      border-radius: 56px;
+      opacity: 0;
+      transition: inherit;
+   }
+
+   .slider-top__button:hover::before,
+  .header .header-container-hidden > .header-play > button:hover::before,
+  .header > .header-container-main > .header-play-main > button:hover::before,
+  .choise-block > .choise-btn > button:hover::before {
+      opacity: 1;
+   }
 }
 
 @media (min-width: 630px) {
@@ -2318,6 +2592,10 @@ body {
    .page__block4 {
       margin-bottom: 50px;
       position: relative;
+   }
+
+   .block4__billet {
+      font-size: 14px;
    }
 
    .block4__slider-dots {
@@ -2406,6 +2684,59 @@ body {
    .block7__item:not(:last-child) {
       margin-right: 16px;
    }
+
+   .block9__ellipse-360 {
+      display: none;
+   }
+
+   .block9__ellipse-630-left,
+  .block9__ellipse-630-right {
+      display: block;
+      position: absolute;
+      z-index: -3;
+   }
+
+   .block9__ellipse-630-left {
+      left: -523px;
+      top: 55px;
+      width: 820px;
+      height: 640px;
+      border-radius: 50%;
+      background: linear-gradient(90deg, #800BF5 26.67%, #25C6F9 97.33%);
+      filter: blur(300px);
+   }
+
+   .block9__ellipse-630-right {
+      right: -236px;
+      bottom: -182px;
+      width: 874px;
+      height: 640px;
+      border-radius: 50%;
+      background: linear-gradient(90deg, #800BF5 26.67%, #25C6F9 97.33%);
+      filter: blur(300px);
+   }
+
+   .slider-top__body {
+      margin-right: 40px;
+   }
+
+   .slider-top__title {
+      font-size: 32px;
+   }
+
+   .slider-top__number {
+      top: -7px;
+      right: 0;
+      font-size: 120px;
+   }
+
+   .block9__slider-bottom .slick-slide {
+      flex: 0 0 595px;
+   }
+
+   .block9__slider-bottom .slick-slide img {
+      width: 100%;
+   }
 }
 
 @media screen and (min-width: 650px) {
@@ -2428,6 +2759,35 @@ body {
 
    .block6-slider-games > .slider-games-list > .main-slider-list > .fst-slider .slick-list {
       padding: 0 15%;
+   }
+}
+
+@media screen and (min-width: 750px) {
+   .block8-buy-subscribe > .subscribe-title {
+      margin-bottom: 80px;
+   }
+
+   .block8-buy-subscribe > .block8-price-subscribe {
+      display: flex;
+      justify-content: space-between;
+   }
+
+   .block8-buy-subscribe > .block8-price-subscribe > .price {
+      width: 336px;
+      height: 336px;
+      text-align: center;
+      border-radius: 50%;
+      opacity: 0.87;
+      padding-top: 115px;
+   }
+
+   .block8-buy-subscribe > .block8-price-subscribe > .price:first-child {
+      margin-bottom: 0;
+   }
+
+   .block8-buy-subscribe > .block8-price-subscribe > .price > .figure {
+      top: -14%;
+      right: 33%;
    }
 }
 
@@ -2554,6 +2914,115 @@ body {
 
    .block1__img img {
       width: 80%;
+   }
+}
+
+@media screen and (min-width: 900px) {
+   .block8-buy-subscribe > .block8-price-subscribe {
+      display: flex;
+      justify-content: space-around;
+   }
+}
+
+@media (min-width: 1020px) {
+   .block9 {
+      margin-bottom: 50px;
+   }
+
+   .block9__billet {
+      margin-bottom: 0;
+   }
+
+   .block9__ellipse-630-left,
+  .block9__ellipse-630-right {
+      display: none;
+   }
+
+   .block9__ellipse-1440-left,
+  .block9__ellipse-1440-right {
+      display: block;
+      position: absolute;
+      z-index: -3;
+      width: 820px;
+      height: 640px;
+      border-radius: 50%;
+      background: linear-gradient(90deg, #800BF5 26.67%, #25C6F9 97.33%);
+      filter: blur(300px);
+   }
+
+   .block9__ellipse-1440-left {
+      top: -37px;
+      left: -520px;
+   }
+
+   .block9__ellipse-1440-right {
+      top: -32px;
+      right: -206px;
+   }
+
+   .block9__cubic-1440 {
+      display: block;
+      position: absolute;
+      top: -48px;
+      right: -214px;
+      z-index: -7;
+      filter: blur(4px);
+   }
+
+   .block9__row {
+      padding: 0 5%;
+      display: flex;
+      justify-content: space-between;
+   }
+
+   .block9__row .block9__slider-top {
+      flex-direction: column;
+      flex: 0 0 40%;
+   }
+
+   .block9__row .block9__slider-top .slider-top__body {
+      position: relative;
+      flex: 0 0 590px;
+      margin-bottom: 60px;
+      margin-right: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding-bottom: 60px;
+   }
+
+   .block9__row .block9__slider-top .slider-top__body:last-of-type {
+      margin-bottom: 0;
+   }
+
+   .block9__row .block9__slider-bottom {
+      flex: 0 0 55%;
+      max-height: 590px;
+   }
+
+   .block9__row .block9__slider-bottom .slider-bottom__img {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      margin-bottom: 60px;
+   }
+
+   .block9__row .block9__slider-bottom .slider-bottom__img:last-of-type {
+      margin-bottom: 0;
+   }
+
+   .block9__row .block9__slider-bottom img {
+      width: 100%;
+      height: 100%;
+   }
+
+   .slider-top__title {
+      font-size: 40px;
+   }
+
+   .slider-top__number {
+      top: 35px;
+      left: 0;
    }
 }
 
@@ -2901,6 +3370,10 @@ body {
       width: 23%;
    }
 
+   .block6-slider-games {
+      margin-bottom: 80px;
+   }
+
    .block6-slider-games > .slider-games-title {
       display: flex;
       flex-direction: row;
@@ -2926,5 +3399,36 @@ body {
 
    .block6-slider-games > .slider-games-list > .main-slider-list > .fst-slider > .blocks {
       flex: 1;
+   }
+
+   .block8-buy-subscribe > .subscribe-title {
+      margin-bottom: 120px;
+   }
+
+   .block8-buy-subscribe > .block8-price-subscribe {
+      display: flex;
+      justify-content: space-evenly;
+   }
+
+   .block8-buy-subscribe > .block8-price-subscribe > .price {
+      width: 448px;
+      height: 448px;
+      padding-top: 190px;
+   }
+
+   .block8-buy-subscribe > .block8-price-subscribe > .price > p:first-child {
+      font-size: 40px;
+      margin-bottom: 60px;
+   }
+
+   .block8-buy-subscribe > .block8-price-subscribe > .price > .figure {
+      top: -10%;
+      right: 40%;
+   }
+}
+
+@media (min-width: 1410px) {
+   .slider-top__number {
+      top: 70px;
    }
 }
