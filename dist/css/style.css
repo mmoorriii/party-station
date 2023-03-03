@@ -73,6 +73,7 @@ h6 {
    font-size: inherit;
 }
 
+.slider-top__button,
 .choise-block > .choise-btn > button,
 .header > .header-container-main > .header-play-main > button,
 .header .header-container-hidden > .header-play > button {
@@ -84,6 +85,7 @@ h6 {
    transition: all 0.6s ease;
 }
 
+.slider-top__button::before,
 .choise-block > .choise-btn > button::before,
 .header > .header-container-main > .header-play-main > button::before,
 .header .header-container-hidden > .header-play > button::before {
@@ -100,12 +102,14 @@ h6 {
    transition: inherit;
 }
 
+.slider-top__button:hover::before,
 .choise-block > .choise-btn > button:hover::before,
 .header > .header-container-main > .header-play-main > button:hover::before,
 .header .header-container-hidden > .header-play > button:hover::before {
    opacity: 1;
 }
 
+.block9__billet,
 .block6-slider-games > .slider-games-title > div:first-of-type,
 .block4__billet {
    font-family: "PT Sans", sans-serif;
@@ -159,6 +163,41 @@ h6 {
 
 .block7__buttons .slick-arrow.disable::before {
    background: none;
+}
+
+.block9__slider-dots .slick-dots,
+.block4__slider-dots .slick-dots {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.block9__slider-dots .slick-dots li,
+.block4__slider-dots .slick-dots li {
+   font-size: 0;
+   width: 8px;
+   height: 8px;
+   background-color: rgba(255, 255, 255, 0.2);
+   border-radius: 50%;
+   transition: all 0.5s ease;
+}
+
+.block9__slider-dots .slick-dots li:not(:last-child),
+.block4__slider-dots .slick-dots li:not(:last-child) {
+   margin-right: 8px;
+}
+
+.block9__slider-dots .slick-dots li.slick-active,
+.block4__slider-dots .slick-dots li.slick-active {
+   height: 8px;
+   background-color: rgb(255, 255, 255);
+   width: 24px;
+   border-radius: 8px;
+}
+
+.block9__slider-dots .slick-dots button,
+.block4__slider-dots .slick-dots button {
+   font-size: 0;
 }
 
 body {
@@ -186,6 +225,7 @@ body {
    background-color: #14063D;
 }
 
+.slider-top__button,
 .choise-block > .choise-btn > button,
 .header > .header-container-main > .header-play-main > button,
 .header .header-container-hidden > .header-play > button {
@@ -197,6 +237,7 @@ body {
    transition: all 0.6s ease;
 }
 
+.slider-top__button::before,
 .choise-block > .choise-btn > button::before,
 .header > .header-container-main > .header-play-main > button::before,
 .header .header-container-hidden > .header-play > button::before {
@@ -213,12 +254,14 @@ body {
    transition: inherit;
 }
 
+.slider-top__button:hover::before,
 .choise-block > .choise-btn > button:hover::before,
 .header > .header-container-main > .header-play-main > button:hover::before,
 .header .header-container-hidden > .header-play > button:hover::before {
    opacity: 1;
 }
 
+.block9__billet,
 .block6-slider-games > .slider-games-title > div:first-of-type,
 .block4__billet {
    font-family: "PT Sans", sans-serif;
@@ -272,6 +315,41 @@ body {
 
 .block7__buttons .slick-arrow.disable::before {
    background: none;
+}
+
+.block9__slider-dots .slick-dots,
+.block4__slider-dots .slick-dots {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.block9__slider-dots .slick-dots li,
+.block4__slider-dots .slick-dots li {
+   font-size: 0;
+   width: 8px;
+   height: 8px;
+   background-color: rgba(255, 255, 255, 0.2);
+   border-radius: 50%;
+   transition: all 0.5s ease;
+}
+
+.block9__slider-dots .slick-dots li:not(:last-child),
+.block4__slider-dots .slick-dots li:not(:last-child) {
+   margin-right: 8px;
+}
+
+.block9__slider-dots .slick-dots li.slick-active,
+.block4__slider-dots .slick-dots li.slick-active {
+   height: 8px;
+   background-color: rgb(255, 255, 255);
+   width: 24px;
+   border-radius: 8px;
+}
+
+.block9__slider-dots .slick-dots button,
+.block4__slider-dots .slick-dots button {
+   font-size: 0;
 }
 
 .header {
@@ -578,6 +656,7 @@ body {
    width: 100%;
 }
 
+.slider-top__button,
 .choise-block > .choise-btn > button,
 .header .header-container-hidden > .header-play > button,
 .header > .header-container-main > .header-play-main > button {
@@ -589,6 +668,7 @@ body {
    transition: all 0.6s ease;
 }
 
+.slider-top__button::before,
 .choise-block > .choise-btn > button::before,
 .header .header-container-hidden > .header-play > button::before,
 .header > .header-container-main > .header-play-main > button::before {
@@ -605,12 +685,14 @@ body {
    transition: inherit;
 }
 
+.slider-top__button:hover::before,
 .choise-block > .choise-btn > button:hover::before,
 .header .header-container-hidden > .header-play > button:hover::before,
 .header > .header-container-main > .header-play-main > button:hover::before {
    opacity: 1;
 }
 
+.block9__billet,
 .block6-slider-games > .slider-games-title > div:first-of-type,
 .block4__billet {
    font-family: "PT Sans", sans-serif;
@@ -664,6 +746,41 @@ body {
 
 .block7__buttons .slick-arrow.disable::before {
    background: none;
+}
+
+.block9__slider-dots .slick-dots,
+.block4__slider-dots .slick-dots {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.block9__slider-dots .slick-dots li,
+.block4__slider-dots .slick-dots li {
+   font-size: 0;
+   width: 8px;
+   height: 8px;
+   background-color: rgba(255, 255, 255, 0.2);
+   border-radius: 50%;
+   transition: all 0.5s ease;
+}
+
+.block9__slider-dots .slick-dots li:not(:last-child),
+.block4__slider-dots .slick-dots li:not(:last-child) {
+   margin-right: 8px;
+}
+
+.block9__slider-dots .slick-dots li.slick-active,
+.block4__slider-dots .slick-dots li.slick-active {
+   height: 8px;
+   background-color: rgb(255, 255, 255);
+   width: 24px;
+   border-radius: 8px;
+}
+
+.block9__slider-dots .slick-dots button,
+.block4__slider-dots .slick-dots button {
+   font-size: 0;
 }
 
 .page__block4 {
@@ -780,36 +897,7 @@ body {
    margin-top: 40px;
 }
 
-.block4__slider-dots .slick-dots {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-}
-
-.block4__slider-dots .slick-dots li {
-   font-size: 0;
-   width: 8px;
-   height: 8px;
-   background-color: rgba(255, 255, 255, 0.2);
-   border-radius: 50%;
-   transition: all 0.5s ease;
-}
-
-.block4__slider-dots .slick-dots li:not(:last-child) {
-   margin-right: 8px;
-}
-
-.block4__slider-dots .slick-dots li.slick-active {
-   height: 8px;
-   background-color: rgb(255, 255, 255);
-   width: 24px;
-   border-radius: 8px;
-}
-
-.block4__slider-dots .slick-dots button {
-   font-size: 0;
-}
-
+.slider-top__button,
 .choise-block > .choise-btn > button,
 .header .header-container-hidden > .header-play > button,
 .header > .header-container-main > .header-play-main > button {
@@ -821,6 +909,7 @@ body {
    transition: all 0.6s ease;
 }
 
+.slider-top__button::before,
 .choise-block > .choise-btn > button::before,
 .header .header-container-hidden > .header-play > button::before,
 .header > .header-container-main > .header-play-main > button::before {
@@ -837,12 +926,14 @@ body {
    transition: inherit;
 }
 
+.slider-top__button:hover::before,
 .choise-block > .choise-btn > button:hover::before,
 .header .header-container-hidden > .header-play > button:hover::before,
 .header > .header-container-main > .header-play-main > button:hover::before {
    opacity: 1;
 }
 
+.block9__billet,
 .block6-slider-games > .slider-games-title > div:first-of-type,
 .block4__billet {
    font-family: "PT Sans", sans-serif;
@@ -896,6 +987,41 @@ body {
 
 .block7__buttons .slick-arrow.disable::before {
    background: none;
+}
+
+.block9__slider-dots .slick-dots,
+.block4__slider-dots .slick-dots {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.block9__slider-dots .slick-dots li,
+.block4__slider-dots .slick-dots li {
+   font-size: 0;
+   width: 8px;
+   height: 8px;
+   background-color: rgba(255, 255, 255, 0.2);
+   border-radius: 50%;
+   transition: all 0.5s ease;
+}
+
+.block9__slider-dots .slick-dots li:not(:last-child),
+.block4__slider-dots .slick-dots li:not(:last-child) {
+   margin-right: 8px;
+}
+
+.block9__slider-dots .slick-dots li.slick-active,
+.block4__slider-dots .slick-dots li.slick-active {
+   height: 8px;
+   background-color: rgb(255, 255, 255);
+   width: 24px;
+   border-radius: 8px;
+}
+
+.block9__slider-dots .slick-dots button,
+.block4__slider-dots .slick-dots button {
+   font-size: 0;
 }
 
 .choise-block {
@@ -972,6 +1098,7 @@ body {
    margin-right: 10px;
 }
 
+.slider-top__button,
 .header .header-container-hidden > .header-play > button,
 .header > .header-container-main > .header-play-main > button,
 .choise-block > .choise-btn > button {
@@ -983,6 +1110,7 @@ body {
    transition: all 0.6s ease;
 }
 
+.slider-top__button::before,
 .header .header-container-hidden > .header-play > button::before,
 .header > .header-container-main > .header-play-main > button::before,
 .choise-block > .choise-btn > button::before {
@@ -999,12 +1127,14 @@ body {
    transition: inherit;
 }
 
+.slider-top__button:hover::before,
 .header .header-container-hidden > .header-play > button:hover::before,
 .header > .header-container-main > .header-play-main > button:hover::before,
 .choise-block > .choise-btn > button:hover::before {
    opacity: 1;
 }
 
+.block9__billet,
 .block6-slider-games > .slider-games-title > div:first-of-type,
 .block4__billet {
    font-family: "PT Sans", sans-serif;
@@ -1058,6 +1188,41 @@ body {
 
 .block7__buttons .slick-arrow.disable::before {
    background: none;
+}
+
+.block9__slider-dots .slick-dots,
+.block4__slider-dots .slick-dots {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.block9__slider-dots .slick-dots li,
+.block4__slider-dots .slick-dots li {
+   font-size: 0;
+   width: 8px;
+   height: 8px;
+   background-color: rgba(255, 255, 255, 0.2);
+   border-radius: 50%;
+   transition: all 0.5s ease;
+}
+
+.block9__slider-dots .slick-dots li:not(:last-child),
+.block4__slider-dots .slick-dots li:not(:last-child) {
+   margin-right: 8px;
+}
+
+.block9__slider-dots .slick-dots li.slick-active,
+.block4__slider-dots .slick-dots li.slick-active {
+   height: 8px;
+   background-color: rgb(255, 255, 255);
+   width: 24px;
+   border-radius: 8px;
+}
+
+.block9__slider-dots .slick-dots button,
+.block4__slider-dots .slick-dots button {
+   font-size: 0;
 }
 
 .block6-slider-games {
@@ -1266,6 +1431,7 @@ body {
    filter: blur(150px);
 }
 
+.slider-top__button,
 .header .header-container-hidden > .header-play > button,
 .header > .header-container-main > .header-play-main > button,
 .choise-block > .choise-btn > button {
@@ -1277,6 +1443,7 @@ body {
    transition: all 0.6s ease;
 }
 
+.slider-top__button::before,
 .header .header-container-hidden > .header-play > button::before,
 .header > .header-container-main > .header-play-main > button::before,
 .choise-block > .choise-btn > button::before {
@@ -1293,12 +1460,14 @@ body {
    transition: inherit;
 }
 
+.slider-top__button:hover::before,
 .header .header-container-hidden > .header-play > button:hover::before,
 .header > .header-container-main > .header-play-main > button:hover::before,
 .choise-block > .choise-btn > button:hover::before {
    opacity: 1;
 }
 
+.block9__billet,
 .block4__billet,
 .block6-slider-games > .slider-games-title > div:first-of-type {
    font-family: "PT Sans", sans-serif;
@@ -1352,6 +1521,41 @@ body {
 
 .block7__buttons .slick-arrow.disable::before {
    background: none;
+}
+
+.block9__slider-dots .slick-dots,
+.block4__slider-dots .slick-dots {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.block9__slider-dots .slick-dots li,
+.block4__slider-dots .slick-dots li {
+   font-size: 0;
+   width: 8px;
+   height: 8px;
+   background-color: rgba(255, 255, 255, 0.2);
+   border-radius: 50%;
+   transition: all 0.5s ease;
+}
+
+.block9__slider-dots .slick-dots li:not(:last-child),
+.block4__slider-dots .slick-dots li:not(:last-child) {
+   margin-right: 8px;
+}
+
+.block9__slider-dots .slick-dots li.slick-active,
+.block4__slider-dots .slick-dots li.slick-active {
+   height: 8px;
+   background-color: rgb(255, 255, 255);
+   width: 24px;
+   border-radius: 8px;
+}
+
+.block9__slider-dots .slick-dots button,
+.block4__slider-dots .slick-dots button {
+   font-size: 0;
 }
 
 .block7 {
@@ -1438,6 +1642,215 @@ body {
    object-fit: cover;
 }
 
+.slider-top__button,
+.header .header-container-hidden > .header-play > button,
+.header > .header-container-main > .header-play-main > button,
+.choise-block > .choise-btn > button {
+   position: relative;
+   border-radius: 56px;
+   width: 200px;
+   height: 50px;
+   background: linear-gradient(90deg, #800BF5 26.67%, #25C6F9 97.33%);
+   transition: all 0.6s ease;
+}
+
+.slider-top__button::before,
+.header .header-container-hidden > .header-play > button::before,
+.header > .header-container-main > .header-play-main > button::before,
+.choise-block > .choise-btn > button::before {
+   content: "";
+   display: block;
+   position: absolute;
+   top: -1px;
+   width: 100%;
+   height: 52px;
+   left: 0px;
+   background: linear-gradient(270deg, #800bf5 26.67%, #25c6f9 97.33%);
+   border-radius: 56px;
+   opacity: 0;
+   transition: inherit;
+}
+
+.slider-top__button:hover::before,
+.header .header-container-hidden > .header-play > button:hover::before,
+.header > .header-container-main > .header-play-main > button:hover::before,
+.choise-block > .choise-btn > button:hover::before {
+   opacity: 1;
+}
+
+.block9__billet,
+.block4__billet,
+.block6-slider-games > .slider-games-title > div:first-of-type {
+   font-family: "PT Sans", sans-serif;
+   font-weight: 700;
+   font-size: 12px;
+   line-height: 120%;
+   letter-spacing: 0.1em;
+   text-transform: uppercase;
+   opacity: 0.6;
+   border: 1px solid rgba(255, 255, 255, 0.6);
+   padding: 7px 17px;
+   border-radius: 56px;
+   display: inline-block;
+}
+
+.block7__buttons .slick-arrow {
+   font-size: 0;
+   border: none;
+   width: 54px;
+   height: 54px;
+   border-radius: 50%;
+   position: relative;
+   background: #29166b;
+   transition: all 0.6s ease;
+   cursor: pointer;
+}
+
+.block7__buttons .slick-arrow.disable {
+   transition: none;
+   background: transparent;
+   border: 2px solid #14063D;
+   pointer-events: none;
+}
+
+.block7__buttons .slick-arrow:hover {
+   background: linear-gradient(0deg, #800BF5 26.67%, #25C6F9 97.33%);
+}
+
+.block7__buttons .slick-arrow::before {
+   content: "";
+   display: block;
+   position: absolute;
+   z-index: -2;
+   top: -1.4px;
+   left: -1.2px;
+   width: 57px;
+   height: 57px;
+   background: linear-gradient(0deg, #800BF5 26.67%, #25C6F9 97.33%);
+   border-radius: 50%;
+}
+
+.block7__buttons .slick-arrow.disable::before {
+   background: none;
+}
+
+.block9__slider-dots .slick-dots,
+.block4__slider-dots .slick-dots {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.block9__slider-dots .slick-dots li,
+.block4__slider-dots .slick-dots li {
+   font-size: 0;
+   width: 8px;
+   height: 8px;
+   background-color: rgba(255, 255, 255, 0.2);
+   border-radius: 50%;
+   transition: all 0.5s ease;
+}
+
+.block9__slider-dots .slick-dots li:not(:last-child),
+.block4__slider-dots .slick-dots li:not(:last-child) {
+   margin-right: 8px;
+}
+
+.block9__slider-dots .slick-dots li.slick-active,
+.block4__slider-dots .slick-dots li.slick-active {
+   height: 8px;
+   background-color: rgb(255, 255, 255);
+   width: 24px;
+   border-radius: 8px;
+}
+
+.block9__slider-dots .slick-dots button,
+.block4__slider-dots .slick-dots button {
+   font-size: 0;
+}
+
+.block9 {
+   margin-bottom: 25px;
+}
+
+.block9__billet {
+   margin-bottom: 10px;
+}
+
+.block9__slider-top {
+   margin-bottom: 35px;
+   display: flex;
+   margin-left: 16px;
+}
+
+.slider-top__body {
+   position: relative;
+   flex: 0 0 100%;
+   margin-right: 16px;
+}
+
+.slider-top__title {
+   font-family: "Russo One", sans-serif;
+   font-size: 24px;
+   line-height: 120%;
+   margin-bottom: 16px;
+}
+
+.slider-top__title span {
+   color: #49CBF4;
+}
+
+.slider-top__text {
+   font-size: 20px;
+   line-height: 120%;
+   opacity: 0.4;
+   font-family: "PT Sans", sans-serif;
+   margin-bottom: 40px;
+   max-width: 312px;
+}
+
+.slider-top__button {
+   font-family: "PT Sans", sans-serif;
+   margin-bottom: 15px;
+   width: 170px;
+}
+
+.slider-top__button span {
+   position: relative;
+   z-index: 2;
+}
+
+.slider-top__number {
+   font-family: "Russo One", sans-serif;
+   font-size: 80px;
+   line-height: 100%;
+   color: rgba(255, 255, 255, 0.2);
+   position: absolute;
+   bottom: 0;
+   right: 0;
+}
+
+.block9__slider-bottom .slick-list {
+   padding-left: 16px;
+}
+
+.block9__slider-bottom .slick-slide:not(:last-child) {
+   margin-right: 16px;
+}
+
+.slider-bottom__img {
+   width: 318px;
+   border: 1px solid red;
+}
+
+.slider-bottom__img img {
+   width: 100%;
+}
+
+.block9__slider-dots {
+   margin-top: 16px;
+}
+
 @media screen and (min-width: 200px) {
    .block6-slider-games > .slider-games-title > p:last-of-type {
       width: 310px;
@@ -1497,7 +1910,8 @@ body {
 }
 
 @media screen and (min-width: 630px) {
-   .choise-block > .choise-btn > button,
+   .slider-top__button,
+  .choise-block > .choise-btn > button,
   .header > .header-container-main > .header-play-main > button,
   .header .header-container-hidden > .header-play > button {
       position: relative;
@@ -1508,7 +1922,8 @@ body {
       transition: all 0.6s ease;
    }
 
-   .choise-block > .choise-btn > button::before,
+   .slider-top__button::before,
+  .choise-block > .choise-btn > button::before,
   .header > .header-container-main > .header-play-main > button::before,
   .header .header-container-hidden > .header-play > button::before {
       content: "";
@@ -1524,13 +1939,15 @@ body {
       transition: inherit;
    }
 
-   .choise-block > .choise-btn > button:hover::before,
+   .slider-top__button:hover::before,
+  .choise-block > .choise-btn > button:hover::before,
   .header > .header-container-main > .header-play-main > button:hover::before,
   .header .header-container-hidden > .header-play > button:hover::before {
       opacity: 1;
    }
 
-   .choise-block > .choise-btn > button,
+   .slider-top__button,
+  .choise-block > .choise-btn > button,
   .header > .header-container-main > .header-play-main > button,
   .header .header-container-hidden > .header-play > button {
       position: relative;
@@ -1541,7 +1958,8 @@ body {
       transition: all 0.6s ease;
    }
 
-   .choise-block > .choise-btn > button::before,
+   .slider-top__button::before,
+  .choise-block > .choise-btn > button::before,
   .header > .header-container-main > .header-play-main > button::before,
   .header .header-container-hidden > .header-play > button::before {
       content: "";
@@ -1557,7 +1975,8 @@ body {
       transition: inherit;
    }
 
-   .choise-block > .choise-btn > button:hover::before,
+   .slider-top__button:hover::before,
+  .choise-block > .choise-btn > button:hover::before,
   .header > .header-container-main > .header-play-main > button:hover::before,
   .header .header-container-hidden > .header-play > button:hover::before {
       opacity: 1;
@@ -1625,7 +2044,8 @@ body {
       margin-bottom: 50px;
    }
 
-   .choise-block > .choise-btn > button,
+   .slider-top__button,
+  .choise-block > .choise-btn > button,
   .header .header-container-hidden > .header-play > button,
   .header > .header-container-main > .header-play-main > button {
       position: relative;
@@ -1636,7 +2056,8 @@ body {
       transition: all 0.6s ease;
    }
 
-   .choise-block > .choise-btn > button::before,
+   .slider-top__button::before,
+  .choise-block > .choise-btn > button::before,
   .header .header-container-hidden > .header-play > button::before,
   .header > .header-container-main > .header-play-main > button::before {
       content: "";
@@ -1652,13 +2073,15 @@ body {
       transition: inherit;
    }
 
-   .choise-block > .choise-btn > button:hover::before,
+   .slider-top__button:hover::before,
+  .choise-block > .choise-btn > button:hover::before,
   .header .header-container-hidden > .header-play > button:hover::before,
   .header > .header-container-main > .header-play-main > button:hover::before {
       opacity: 1;
    }
 
-   .choise-block > .choise-btn > button,
+   .slider-top__button,
+  .choise-block > .choise-btn > button,
   .header .header-container-hidden > .header-play > button,
   .header > .header-container-main > .header-play-main > button {
       position: relative;
@@ -1669,7 +2092,8 @@ body {
       transition: all 0.6s ease;
    }
 
-   .choise-block > .choise-btn > button::before,
+   .slider-top__button::before,
+  .choise-block > .choise-btn > button::before,
   .header .header-container-hidden > .header-play > button::before,
   .header > .header-container-main > .header-play-main > button::before {
       content: "";
@@ -1685,7 +2109,8 @@ body {
       transition: inherit;
    }
 
-   .choise-block > .choise-btn > button:hover::before,
+   .slider-top__button:hover::before,
+  .choise-block > .choise-btn > button:hover::before,
   .header .header-container-hidden > .header-play > button:hover::before,
   .header > .header-container-main > .header-play-main > button:hover::before {
       opacity: 1;
@@ -1741,7 +2166,8 @@ body {
       width: 100% !important;
    }
 
-   .header .header-container-hidden > .header-play > button,
+   .slider-top__button,
+  .header .header-container-hidden > .header-play > button,
   .header > .header-container-main > .header-play-main > button,
   .choise-block > .choise-btn > button {
       position: relative;
@@ -1752,7 +2178,8 @@ body {
       transition: all 0.6s ease;
    }
 
-   .header .header-container-hidden > .header-play > button::before,
+   .slider-top__button::before,
+  .header .header-container-hidden > .header-play > button::before,
   .header > .header-container-main > .header-play-main > button::before,
   .choise-block > .choise-btn > button::before {
       content: "";
@@ -1768,13 +2195,15 @@ body {
       transition: inherit;
    }
 
-   .header .header-container-hidden > .header-play > button:hover::before,
+   .slider-top__button:hover::before,
+  .header .header-container-hidden > .header-play > button:hover::before,
   .header > .header-container-main > .header-play-main > button:hover::before,
   .choise-block > .choise-btn > button:hover::before {
       opacity: 1;
    }
 
-   .header .header-container-hidden > .header-play > button,
+   .slider-top__button,
+  .header .header-container-hidden > .header-play > button,
   .header > .header-container-main > .header-play-main > button,
   .choise-block > .choise-btn > button {
       position: relative;
@@ -1785,7 +2214,8 @@ body {
       transition: all 0.6s ease;
    }
 
-   .header .header-container-hidden > .header-play > button::before,
+   .slider-top__button::before,
+  .header .header-container-hidden > .header-play > button::before,
   .header > .header-container-main > .header-play-main > button::before,
   .choise-block > .choise-btn > button::before {
       content: "";
@@ -1801,7 +2231,44 @@ body {
       transition: inherit;
    }
 
-   .header .header-container-hidden > .header-play > button:hover::before,
+   .slider-top__button:hover::before,
+  .header .header-container-hidden > .header-play > button:hover::before,
+  .header > .header-container-main > .header-play-main > button:hover::before,
+  .choise-block > .choise-btn > button:hover::before {
+      opacity: 1;
+   }
+
+   .slider-top__button,
+  .header .header-container-hidden > .header-play > button,
+  .header > .header-container-main > .header-play-main > button,
+  .choise-block > .choise-btn > button {
+      position: relative;
+      border-radius: 56px;
+      width: 200px;
+      height: 50px;
+      background: linear-gradient(90deg, #800BF5 26.67%, #25C6F9 97.33%);
+      transition: all 0.6s ease;
+   }
+
+   .slider-top__button::before,
+  .header .header-container-hidden > .header-play > button::before,
+  .header > .header-container-main > .header-play-main > button::before,
+  .choise-block > .choise-btn > button::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: -1px;
+      width: 202px;
+      height: 52px;
+      left: 0px;
+      background: linear-gradient(270deg, #800bf5 26.67%, #25c6f9 97.33%);
+      border-radius: 56px;
+      opacity: 0;
+      transition: inherit;
+   }
+
+   .slider-top__button:hover::before,
+  .header .header-container-hidden > .header-play > button:hover::before,
   .header > .header-container-main > .header-play-main > button:hover::before,
   .choise-block > .choise-btn > button:hover::before {
       opacity: 1;

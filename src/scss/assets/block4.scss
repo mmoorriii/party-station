@@ -116,36 +116,7 @@
 
 .block4__slider-dots {
    margin-top: 40px;
-
-   .slick-dots {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      li {
-         font-size: 0;
-         width: 8px;
-         height: 8px;
-         background-color: rgba(255, 255, 255, 0.2);
-         border-radius: 50%;
-         transition: all 0.5s ease;
-
-         &:not(:last-child) {
-            margin-right: 8px;
-         }
-
-         &.slick-active {
-            height: 8px;
-            background-color: rgb(255, 255, 255);
-            width: 24px;
-            border-radius: 8px;
-         }
-      }
-
-      button {
-         font-size: 0;
-      }
-   }
+   @extend %slickDots;
 }
 
 @media (min-width: 630px) {
