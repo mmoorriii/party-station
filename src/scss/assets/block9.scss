@@ -53,7 +53,7 @@
    @extend %buttonMainStyle;
    font-family: $fontText;
    margin-bottom: 15px;
-   width: 170px;
+   width: 170px !important;
 
    span {
       position: relative;
@@ -129,6 +129,10 @@
 
 //----MEDIA-----------------------------------------------------------------------------------------------------
 @media (min-width: 630px) {
+   .block9__billet {
+      font-size: 14px;
+   }
+
    .block9__ellipse-360 {
       display: none;
    }
@@ -231,6 +235,8 @@
    }
 
    .block9__row {
+      max-width: 1440px;
+      margin: 0 auto;
       padding: 0 5%;
       display: flex;
       justify-content: space-between;

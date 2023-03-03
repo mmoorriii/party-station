@@ -182,101 +182,141 @@
    }
 
    .page__block4 {
-      position: relative;
-
-      .block4__android {
-         position: absolute;
-         left: 35%;
-         bottom: 0;
-         display: flex;
-         align-items: center;
-
-         .android__icon {
-            width: 48px;
-            height: 48px;
-            background: #800BF5;
-            border-radius: 50%;
-            margin-right: 16px;
-            line-height: 46px;
-            text-align: center;
-         }
-
-         .android__text {
-            font-size: 20px;
-            line-height: 120%;
-            font-family: $fontText;
-            width: 160px;
-         }
-      }
-
-      .cosmonaut-left {
-         width: 300px;
-         top: 33%;
-         left: 6%;
-      }
-
-      .cosmonaut-right {
-         width: 246px;
-         bottom: -1%;
-         right: 4%;
-      }
-
-      .arrow1-1440,
-      .arrow2-1440,
-      .arrow3-1440,
-      .arrow4-1440,
-      .cosmonaut-left,
-      .cosmonaut-right,
-      .cosmonaut-left-light,
-      .cosmonaut-right-light {
+      .block4__image-container {
          display: block;
-         position: absolute;
-      }
+         max-width: 1200px;
+         margin: 0 auto;
+         position: relative;
+         height: 1356px;
 
-      .cosmonaut-left-light {
-         width: 297.86px;
-         height: 174.79px;
-         border-radius: 50%;
-         z-index: -2;
-         top: 39%;
-         left: 6%;
-         background: linear-gradient(90deg, #800BF5 26.67%, #25C6F9 97.33%);
-         filter: blur(100px);
-         transform: rotate(24.94deg);
-      }
+         .block4__android {
+            position: absolute;
+            left: 24%;
+            bottom: 0;
+            display: flex;
+            align-items: center;
 
-      .cosmonaut-right-light {
-         z-index: -3;
-         width: 1440px;
-         height: 554px;
-         border-radius: 50%;
-         background: #800BF5;
-         filter: blur(300px);
-         bottom: -15%;
-         right: -54%;
-      }
+            .android__icon {
+               width: 48px;
+               height: 48px;
+               background: #800BF5;
+               border-radius: 50%;
+               margin-right: 16px;
+               line-height: 46px;
+               text-align: center;
+            }
 
-      .arrow1-1440 {
-         right: 38%;
-         top: 29%;
-      }
+            .android__text {
+               font-size: 20px;
+               line-height: 120%;
+               font-family: $fontText;
+               width: 160px;
+            }
+         }
 
-      .arrow2-1440 {
-         z-index: 5;
-         left: 28%;
-         top: 48%;
-         width: 200px;
-      }
+         .cosmonaut-left {
+            width: 300px;
+            top: 24%;
+            left: 4%;
+         }
 
-      .arrow3-1440 {
-         bottom: 24%;
-         right: 41%;
-         width: 193px;
-      }
+         .cosmonaut-right {
+            width: 246px;
+            bottom: -1%;
+            right: 4%;
+         }
 
-      .arrow4-1440 {
-         left: 45%;
-         bottom: 5%;
+         .arrow1-1440,
+         .arrow2-1440,
+         .arrow3-1440,
+         .arrow4-1440,
+         .cosmonaut-left,
+         .cosmonaut-right,
+         .cosmonaut-left-light,
+         .cosmonaut-right-light {
+            display: block;
+            position: absolute;
+         }
+
+         .cosmonaut-left-light {
+            width: 297.86px;
+            height: 174.79px;
+            border-radius: 50%;
+            z-index: -2;
+            top: 29%;
+            left: 4%;
+            background: linear-gradient(90deg, #800BF5 26.67%, #25C6F9 97.33%);
+            filter: blur(100px);
+            transform: rotate(24.94deg);
+         }
+
+         .cosmonaut-right-light {
+            z-index: -3;
+            width: 1440px;
+            height: 554px;
+            border-radius: 50%;
+            background: #800BF5;
+            filter: blur(300px);
+            bottom: -15%;
+            right: -75%;
+         }
+
+         .arrow1-1440 {
+            right: 34%;
+            top: 16%;
+         }
+
+         .arrow2-1440 {
+            left: 33%;
+            top: 38%;
+            width: 190px;
+         }
+
+         .arrow3-1440 {
+            bottom: 25%;
+            right: 42%;
+            width: 193px;
+         }
+
+         .arrow4-1440 {
+            left: 38%;
+            bottom: 5%;
+         }
+
+         .block4__slider {
+
+            #block1 {
+               position: absolute;
+               width: 336px;
+               left: 289px;
+               top: 0;
+            }
+
+            #block2 {
+               position: absolute;
+               width: 336px;
+               right: 213px;
+               top: 424px;
+            }
+
+            #block3 {
+               position: absolute;
+               width: 336px;
+               left: 157px;
+               top: 686px;
+            }
+
+            #block4 {
+               position: absolute;
+               width: 280px;
+               right: 347px;
+               bottom: 34px;
+
+               .block4__slider-round {
+                  height: 280px;
+               }
+            }
+         }
       }
    }
 
@@ -292,10 +332,8 @@
    }
 
    .block4__slider-body {
-      >.arrow-up {
-         display: none;
-      }
 
+      >.arrow-up,
       >.arrow-down {
          display: none;
       }
@@ -312,43 +350,6 @@
          z-index: 5;
          top: 77px;
          right: 0;
-      }
-   }
-
-   .block4__slider {
-      position: relative;
-      height: 1356px;
-
-      #block1 {
-         position: absolute;
-         width: 336px;
-         left: 328px;
-         top: 0;
-      }
-
-      #block2 {
-         position: absolute;
-         width: 336px;
-         right: 286px;
-         top: 424px;
-      }
-
-      #block3 {
-         position: absolute;
-         width: 336px;
-         left: 172px;
-         top: 715px;
-      }
-
-      #block4 {
-         position: absolute;
-         width: 280px;
-         right: 347px;
-         bottom: 34px;
-
-         .block4__slider-round {
-            height: 280px;
-         }
       }
    }
 }
