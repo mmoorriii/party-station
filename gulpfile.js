@@ -5,7 +5,7 @@ const gulp = require("gulp");
 const fileInclude = require('gulp-file-include');
 const webpHtmlNosvg = require('gulp-webp-html-nosvg');
 const versionNumber = require('gulp-version-number');
-const removeHtmlComments = require('gulp-remove-html-comments');
+//const removeHtmlComments = require('gulp-remove-html-comments');
 const autoprefixer = require("gulp-autoprefixer");
 const cssbeautify = require("gulp-cssbeautify");
 const gulpGroupCssMedia = require("gulp-group-css-media-queries");
@@ -78,8 +78,10 @@ function html() {
             message: "Error: <%= error.message %>"
          })
       ))
-      .pipe(fileInclude())                      //ВОЗМОЖНОСТЬ ДОБАВЛЕНИЯ ФАЙЛОВ С ПОМОЩЬЮ @@INCLUDE
-      .pipe(replace(/@img\//g, '../img/'))      //ПРЕОБРАЗУЕТ @IMG В ../IMG
+      .pipe(fileInclude({
+         prefix: '@@',
+      }))                      //ВОЗМОЖНОСТЬ ДОБАВЛЕНИЯ ФАЙЛОВ С ПОМОЩЬЮ @@INCLUDE
+      //.pipe(replace(/@img\//g, '../img/'))      //ПРЕОБРАЗУЕТ @IMG В ../IMG
       .pipe(ifPlugin(isBuild, webpHtmlNosvg())) //ДОБАВЛЯЕТ WEBP ФОРМАТ ИЗОБРАЖЕНИЯ ЕСЛИ БРАУЗЕР ПОЗВОЛЯЕТ
       .pipe(ifPlugin(isBuild,                   //ДОБАВЯЛЕТ ДАТУ К ФАЙЛАМ ПОДКЛЮЧЕНИЯ CSS И JS
          versionNumber({
@@ -97,7 +99,7 @@ function html() {
             }
          })
       ))
-      .pipe(removeHtmlComments())              //УДАЛЯЕТ КОММЕНТЫ ИЗ HTML
+      //.pipe(removeHtmlComments())              //УДАЛЯЕТ КОММЕНТЫ ИЗ HTML
       .pipe(dest(path.build.html))             //ВЫГРУЖАЕТ В ПАПКУ SRC
       .pipe(browserSync.reload({ stream: true }));
 }
