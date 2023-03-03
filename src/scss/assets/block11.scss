@@ -1,0 +1,133 @@
+@import 'vars';
+@import 'extends';
+
+.block11 {
+   margin-bottom: 25px;
+}
+
+.block11__billet {
+   @extend %billet;
+}
+
+.accordion-item {
+   display: flex;
+
+   &:not(:last-child) {
+      margin-bottom: 2px;
+   }
+}
+
+.accordion-body {
+   flex: 1 1 auto;
+   padding: 13px 16px;
+   background: linear-gradient(90deg, #00C2FF 0%, rgba(73, 203, 244, 0) 100%);
+   border-radius: 0px 48px 48px 0px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+.accordion-header {
+   h2 {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 120%;
+      font-family: $fontText;
+      color: #14063D;
+   }
+}
+
+.accordion-btn {
+   flex: 0 0 48px;
+   height: 48px;
+   background: #49CBF4;
+   border-radius: 40px 0px 0px 40px;
+   font-size: 40px;
+   line-height: 48px;
+   font-family: $fontText;
+   color: #14063D;
+
+   &:nth-child(2n) {
+      height: 69px;
+   }
+}
+
+.accordion-content {
+   display: none;
+   line-height: 120%;
+   color: #14063D;
+   font-family: $fontText;
+   transition: all 0.7s linear;
+
+
+   p {
+      padding-top: 25px;
+      margin-bottom: 25px;
+   }
+
+   ol {
+      padding-left: 5%;
+
+      li {
+         padding-left: 3px;
+
+         &:not(:last-child) {
+            margin-bottom: 15px;
+         }
+      }
+   }
+}
+
+.accordion-item.open {
+   .accordion-content {
+      display: block;
+   }
+
+   .accordion-body {
+      background: #49CBF4;
+   }
+}
+
+@media (min-width: 630px) {
+   .block11 {
+      margin-bottom: 50px;
+   }
+
+   .block11__accordion {
+      margin: 0 5%;
+      max-width: 1110px;
+   }
+
+   .accordion-body {
+      border-radius: 56px;
+      padding: 36px 48px;
+      transition: all 0.7s linear;
+
+      &:hover {
+         background: linear-gradient(90deg, rgb(0, 194, 255) 0%, rgb(0, 194, 255) 100%);
+         cursor: pointer;
+      }
+   }
+
+   .accordion-header {
+      h2 {
+         font-size: 20px;
+      }
+   }
+
+   .accordion-btn {
+      flex: 0 0 96px;
+      height: 96px;
+      border-radius: 50%;
+
+      &:nth-child(2n) {
+         height: 96px;
+      }
+   }
+
+   .accordion-item {
+      &:not(:last-child) {
+         margin-bottom: 16px;
+      }
+   }
+}

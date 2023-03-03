@@ -55,6 +55,14 @@
    margin-bottom: 15px;
    width: 170px !important;
 
+   &::before {
+      width: 100% !important;
+   }
+
+   &:hover {
+      background: linear-gradient(90deg, #800bf5 26.67%, #25c6f9 97.33%);
+   }
+
    span {
       position: relative;
       z-index: 2;

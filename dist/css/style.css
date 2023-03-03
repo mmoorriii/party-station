@@ -110,6 +110,7 @@ h6 {
 }
 
 .block12-partners > .block12-title,
+.block11__billet,
 .block9__billet,
 .block8-buy-subscribe > .subscribe-title,
 .block6-slider-games > .slider-games-title > div:first-of-type,
@@ -304,6 +305,7 @@ body {
 }
 
 .block12-partners > .block12-title,
+.block11__billet,
 .block9__billet,
 .block8-buy-subscribe > .subscribe-title,
 .block6-slider-games > .slider-games-title > div:first-of-type,
@@ -787,6 +789,7 @@ body {
 }
 
 .block12-partners > .block12-title,
+.block11__billet,
 .block9__billet,
 .block8-buy-subscribe > .subscribe-title,
 .block6-slider-games > .slider-games-title > div:first-of-type,
@@ -1070,6 +1073,7 @@ body {
 }
 
 .block12-partners > .block12-title,
+.block11__billet,
 .block9__billet,
 .block8-buy-subscribe > .subscribe-title,
 .block6-slider-games > .slider-games-title > div:first-of-type,
@@ -1313,6 +1317,7 @@ body {
 }
 
 .block12-partners > .block12-title,
+.block11__billet,
 .block9__billet,
 .block8-buy-subscribe > .subscribe-title,
 .block6-slider-games > .slider-games-title > div:first-of-type,
@@ -1688,6 +1693,7 @@ body {
 }
 
 .block12-partners > .block12-title,
+.block11__billet,
 .block9__billet,
 .block8-buy-subscribe > .subscribe-title,
 .block4__billet,
@@ -1941,6 +1947,7 @@ body {
 }
 
 .block12-partners > .block12-title,
+.block11__billet,
 .block9__billet,
 .block8-buy-subscribe > .subscribe-title,
 .block4__billet,
@@ -2173,6 +2180,7 @@ body {
 }
 
 .block12-partners > .block12-title,
+.block11__billet,
 .block9__billet,
 .block4__billet,
 .block6-slider-games > .slider-games-title > div:first-of-type,
@@ -2354,6 +2362,14 @@ body {
    width: 170px !important;
 }
 
+.slider-top__button::before {
+   width: 100% !important;
+}
+
+.slider-top__button:hover {
+   background: linear-gradient(90deg, #800bf5 26.67%, #25c6f9 97.33%);
+}
+
 .slider-top__button span {
    position: relative;
    z-index: 2;
@@ -2454,6 +2470,7 @@ body {
 }
 
 .block12-partners > .block12-title,
+.block11__billet,
 .block4__billet,
 .block6-slider-games > .slider-games-title > div:first-of-type,
 .block8-buy-subscribe > .subscribe-title,
@@ -2702,10 +2719,259 @@ body {
 }
 
 .block12-partners > .block12-title,
+.block11__billet,
 .block4__billet,
 .block6-slider-games > .slider-games-title > div:first-of-type,
 .block8-buy-subscribe > .subscribe-title,
 .block9__billet {
+   font-family: "PT Sans", sans-serif;
+   font-weight: 700;
+   font-size: 12px;
+   line-height: 120%;
+   letter-spacing: 0.1em;
+   text-transform: uppercase;
+   opacity: 0.6;
+   border: 1px solid rgba(255, 255, 255, 0.6);
+   padding: 7px 17px;
+   border-radius: 56px;
+   display: inline-block;
+}
+
+.block7__buttons .slick-arrow {
+   font-size: 0;
+   border: none;
+   width: 54px;
+   height: 54px;
+   border-radius: 50%;
+   position: relative;
+   background: #29166b;
+   transition: all 0.6s ease;
+   cursor: pointer;
+}
+
+.block7__buttons .slick-arrow.disable {
+   transition: none;
+   background: transparent;
+   border: 2px solid #14063D;
+   pointer-events: none;
+}
+
+.block7__buttons .slick-arrow:hover {
+   background: linear-gradient(0deg, #800BF5 26.67%, #25C6F9 97.33%);
+}
+
+.block7__buttons .slick-arrow::before {
+   content: "";
+   display: block;
+   position: absolute;
+   z-index: -2;
+   top: -1.4px;
+   left: -1.2px;
+   width: 57px;
+   height: 57px;
+   background: linear-gradient(0deg, #800BF5 26.67%, #25C6F9 97.33%);
+   border-radius: 50%;
+}
+
+.block7__buttons .slick-arrow.disable::before {
+   background: none;
+}
+
+.block4__slider-dots .slick-dots,
+.block9__slider-dots .slick-dots {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.block4__slider-dots .slick-dots li,
+.block9__slider-dots .slick-dots li {
+   font-size: 0;
+   width: 8px;
+   height: 8px;
+   background-color: rgba(255, 255, 255, 0.2);
+   border-radius: 50%;
+   transition: all 0.5s ease;
+}
+
+.block4__slider-dots .slick-dots li:not(:last-child),
+.block9__slider-dots .slick-dots li:not(:last-child) {
+   margin-right: 8px;
+}
+
+.block4__slider-dots .slick-dots li.slick-active,
+.block9__slider-dots .slick-dots li.slick-active {
+   height: 8px;
+   background-color: rgb(255, 255, 255);
+   width: 24px;
+   border-radius: 8px;
+}
+
+.block4__slider-dots .slick-dots button,
+.block9__slider-dots .slick-dots button {
+   font-size: 0;
+}
+
+.block10-comments > .slick-list > .slick-track > .comment > .block10-initials-buttons > .buttons > .arrow-btn {
+   font-size: 0;
+   border: none;
+   width: 44px;
+   height: 44px;
+   border-radius: 50%;
+   position: relative;
+   background: #14063d;
+   transition: all 0.6s ease;
+   cursor: pointer;
+}
+
+.block10-comments > .slick-list > .slick-track > .comment > .block10-initials-buttons > .buttons > .disable.arrow-btn {
+   transition: none;
+   background: transparent;
+   border: 2px solid #14063D;
+   pointer-events: none;
+}
+
+.block10-comments > .slick-list > .slick-track > .comment > .block10-initials-buttons > .buttons > .arrow-btn:hover {
+   background: linear-gradient(0deg, #800BF5 26.67%, #25C6F9 97.33%);
+}
+
+.block10-comments > .slick-list > .slick-track > .comment > .block10-initials-buttons > .buttons > .arrow-btn::before {
+   content: "";
+   display: block;
+   position: absolute;
+   z-index: -2;
+   top: -1px;
+   left: -1px;
+   width: 46px;
+   height: 46px;
+   background: linear-gradient(0deg, #800bf5 26.67%, #25c6f9 97.33%);
+   border-radius: 50%;
+}
+
+.block10-comments > .slick-list > .slick-track > .comment > .block10-initials-buttons > .buttons > .disable.arrow-btn::before {
+   background: none;
+}
+
+.block11 {
+   margin-bottom: 25px;
+}
+
+.accordion-item {
+   display: flex;
+}
+
+.accordion-item:not(:last-child) {
+   margin-bottom: 2px;
+}
+
+.accordion-body {
+   flex: 1 1 auto;
+   padding: 13px 16px;
+   background: linear-gradient(90deg, #00C2FF 0%, rgba(73, 203, 244, 0) 100%);
+   border-radius: 0px 48px 48px 0px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+.accordion-header h2 {
+   font-weight: 700;
+   font-size: 18px;
+   line-height: 120%;
+   font-family: "PT Sans", sans-serif;
+   color: #14063D;
+}
+
+.accordion-btn {
+   flex: 0 0 48px;
+   height: 48px;
+   background: #49CBF4;
+   border-radius: 40px 0px 0px 40px;
+   font-size: 40px;
+   line-height: 48px;
+   font-family: "PT Sans", sans-serif;
+   color: #14063D;
+}
+
+.accordion-btn:nth-child(2n) {
+   height: 69px;
+}
+
+.accordion-content {
+   display: none;
+   line-height: 120%;
+   color: #14063D;
+   font-family: "PT Sans", sans-serif;
+   transition: all 0.7s linear;
+}
+
+.accordion-content p {
+   padding-top: 25px;
+   margin-bottom: 25px;
+}
+
+.accordion-content ol {
+   padding-left: 5%;
+}
+
+.accordion-content ol li {
+   padding-left: 3px;
+}
+
+.accordion-content ol li:not(:last-child) {
+   margin-bottom: 15px;
+}
+
+.accordion-item.open .accordion-content {
+   display: block;
+}
+
+.accordion-item.open .accordion-body {
+   background: #49CBF4;
+}
+
+.header .header-container-hidden > .header-play > button,
+.header > .header-container-main > .header-play-main > button,
+.choise-block > .choise-btn > button,
+.slider-top__button {
+   position: relative;
+   border-radius: 56px;
+   width: 200px;
+   height: 50px;
+   background: linear-gradient(90deg, #800BF5 26.67%, #25C6F9 97.33%);
+   transition: all 0.6s ease;
+}
+
+.header .header-container-hidden > .header-play > button::before,
+.header > .header-container-main > .header-play-main > button::before,
+.choise-block > .choise-btn > button::before,
+.slider-top__button::before {
+   content: "";
+   display: block;
+   position: absolute;
+   top: -1px;
+   width: 100%;
+   height: 52px;
+   left: 0px;
+   background: linear-gradient(270deg, #800bf5 26.67%, #25c6f9 97.33%);
+   border-radius: 56px;
+   opacity: 0;
+   transition: inherit;
+}
+
+.header .header-container-hidden > .header-play > button:hover::before,
+.header > .header-container-main > .header-play-main > button:hover::before,
+.choise-block > .choise-btn > button:hover::before,
+.slider-top__button:hover::before {
+   opacity: 1;
+}
+
+.block12-partners > .block12-title,
+.block4__billet,
+.block6-slider-games > .slider-games-title > div:first-of-type,
+.block8-buy-subscribe > .subscribe-title,
+.block9__billet,
+.block11__billet {
    font-family: "PT Sans", sans-serif;
    font-weight: 700;
    font-size: 12px;
@@ -3481,6 +3747,42 @@ body {
       opacity: 1;
    }
 
+   .header .header-container-hidden > .header-play > button,
+  .header > .header-container-main > .header-play-main > button,
+  .choise-block > .choise-btn > button,
+  .slider-top__button {
+      position: relative;
+      border-radius: 56px;
+      width: 200px;
+      height: 50px;
+      background: linear-gradient(90deg, #800BF5 26.67%, #25C6F9 97.33%);
+      transition: all 0.6s ease;
+   }
+
+   .header .header-container-hidden > .header-play > button::before,
+  .header > .header-container-main > .header-play-main > button::before,
+  .choise-block > .choise-btn > button::before,
+  .slider-top__button::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: -1px;
+      width: 202px;
+      height: 52px;
+      left: 0px;
+      background: linear-gradient(270deg, #800bf5 26.67%, #25c6f9 97.33%);
+      border-radius: 56px;
+      opacity: 0;
+      transition: inherit;
+   }
+
+   .header .header-container-hidden > .header-play > button:hover::before,
+  .header > .header-container-main > .header-play-main > button:hover::before,
+  .choise-block > .choise-btn > button:hover::before,
+  .slider-top__button:hover::before {
+      opacity: 1;
+   }
+
    .block12-partners > .block12-title {
       font-size: 14px;
    }
@@ -3681,6 +3983,44 @@ body {
 
    .block9__slider-bottom .slick-slide img {
       width: 100%;
+   }
+
+   .block11 {
+      margin-bottom: 50px;
+   }
+
+   .block11__accordion {
+      margin: 0 5%;
+      max-width: 1110px;
+   }
+
+   .accordion-body {
+      border-radius: 56px;
+      padding: 36px 48px;
+      transition: all 0.7s linear;
+   }
+
+   .accordion-body:hover {
+      background: linear-gradient(90deg, rgb(0, 194, 255) 0%, rgb(0, 194, 255) 100%);
+      cursor: pointer;
+   }
+
+   .accordion-header h2 {
+      font-size: 20px;
+   }
+
+   .accordion-btn {
+      flex: 0 0 96px;
+      height: 96px;
+      border-radius: 50%;
+   }
+
+   .accordion-btn:nth-child(2n) {
+      height: 96px;
+   }
+
+   .accordion-item:not(:last-child) {
+      margin-bottom: 16px;
    }
 }
 
