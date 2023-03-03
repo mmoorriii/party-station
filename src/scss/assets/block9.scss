@@ -4,7 +4,6 @@
 .block9 {
    margin-bottom: 25px;
    position: relative;
-   overflow: hidden;
 }
 
 .block9__billet {
@@ -136,7 +135,7 @@
 
    .block9__ellipse-630-left,
    .block9__ellipse-630-right {
-      display: block;
+      display: inline-block;
       position: absolute;
       z-index: -3;
    }
@@ -202,7 +201,7 @@
 
    .block9__ellipse-1440-left,
    .block9__ellipse-1440-right {
-      display: block;
+      display: inline-block;
       position: absolute;
       z-index: -3;
       width: 820px;
